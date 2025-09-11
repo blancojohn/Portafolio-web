@@ -1,11 +1,15 @@
 import Header from "./components/Header";
-
+import Aside from "./components/Aside";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 const App = () => {
   return (
     <>
-      <h1>Hello</h1>
       <Header />
+      <Aside />
+      <Projects />
+      <Contact />
     </>
   )
 

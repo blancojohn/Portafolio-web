@@ -1,12 +1,21 @@
+#root {
+  display: grid;
+  grid-template-row: 500px 500px;
+  border: solid red;
+
+}
+
+#root header aside section {
+  border: solid red;
+
+} 
+
 body {
   background-color: black;
 }
 
-h1 {
+h1, h3, h4, small {
   color: white;
   font-family: sans-serif;
 }
 
-div {
-  overflow: auto;
-}
