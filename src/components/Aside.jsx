@@ -1,7 +1,7 @@
 const Aside= ()=>{
     return (
         <>
-            <aside className="aside">
+            <aside className="layout">
                 <header>
                     <h3>Aside</h3>
                     <small>Disponible para trabajar</small>

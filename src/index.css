@@ -1,12 +1,13 @@
 #root {
   display: grid;
-  grid-template-row: 500px 500px;
-  border: solid red;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 500px 500px 400px;
+  outline: dashed 1px red;
 
 }
 
-#root header aside section {
-  border: solid red;
+#root .layout {
+  outline: dashed 1px yellow;
 
 } 
 

@@ -1,7 +1,7 @@
 const Projects= ()=>{
     return (
         <>
-            <section className="projects">
+            <section className="layout">
                 <article>
                     <header>
                         <h4>Proyectos</h4>
