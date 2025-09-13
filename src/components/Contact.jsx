@@ -1,7 +1,7 @@
 const Contact= ()=>{
     return (
         <>
-            <section className="layout">
+            <section className="contact">
                 <h3>Formulario de contacto</h3>
 
                 <form>

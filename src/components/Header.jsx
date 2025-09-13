@@ -1,7 +1,7 @@
 const Header= ()=>{
     return (
         <>
-            <header className="layout">
+            <header className="header">
                 <h1>Navbar</h1>
             </header>
         </>

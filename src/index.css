@@ -1,18 +1,40 @@
 #root {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 80px 500px 500px 400px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 400px 400px 300px;
+  min-height: 100vh;
   outline: dashed 1px red;
-
+  grid-template-areas:
+    "header header"
+    "aside aside"
+    "projects projects"
+    "contact contact" 
 }
 
-#root .layout {
-  outline: dashed 1px yellow;
+#root .header {
+  grid-area: header;
+  outline: dashed 1px red;
+}
 
-} 
+#root .aside {
+    grid-area: aside;
+    outline: dashed 1px red;
+}
+
+
+#root .projects {
+    grid-area: projects;
+    outline: dashed 1px red;
+}
+
+#root .contact {
+    grid-area: contact;
+    outline: dashed 1px red;
+}
 
 body {
   background-color: black;
+  margin: 0;
 }
 
 h1, h3, h4, small {
