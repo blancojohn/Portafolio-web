@@ -1,26 +1,49 @@
 #root {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 80px 400px 400px 300px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px repeat(3, 400px);
   min-height: 100vh;
   outline: dashed 1px red;
-  grid-template-areas:
-    "header header"
-    "aside aside"
-    "projects projects"
-    "contact contact" 
+  grid-template-areas: /* Disposición para filas y columnas de acuerdo a los nombres creados de las clases  */
+    "header header header header"
+    "aside aside aside aside"
+    "projects projects projects projects"
+    "contact contact contact conatact" 
 }
 
-#root .header {
+/* Disposición de los elementos del navbar */
+
+
+.posicion-enlaces-navbar {
   grid-area: header;
-  outline: dashed 1px red;
+  justify-self: center;
+  align-self: center;
+  with: 900px;
 }
 
-#root .aside {
-    grid-area: aside;
+.posicion-logo {
+  grid-area: header;
+  justify-self: start;
+  align-self: center;
+}
+
+.posicion-enlace-formulario {
+  grid-area: header;
+  justify-self: end;
+  align-self: center;
+}
+
+/* Disposición de los elementos en el aside */
+
+.disposicion-experiencia {
+    grid-area: 2/2/3/3; /* posiciona los elementos en lacuadrícula especificada */
     outline: dashed 1px red;
 }
 
+.disposicion-foto {
+  grid-area: 2/3/3/4; /* posiciona la foto en la cuadrícula especificada */
+  outline: dashed 1px red;
+}
 
 #root .projects {
     grid-area: projects;
@@ -30,6 +53,18 @@
 #root .contact {
     grid-area: contact;
     outline: dashed 1px red;
+}
+
+/* Apariencia elementos navbar */
+
+.header, a {
+  color: white;
+  text-decoration: none;
+  margin: 30px; /* márgenes de los <a> central del header */
+}
+
+.estilos-enlace-formulario {
+  color: red;
 }
 
 body {

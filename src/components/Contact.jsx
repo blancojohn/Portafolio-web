@@ -1,7 +1,7 @@
 const Contact= ()=>{
     return (
         <>
-            <section className="contact">
+            <section className="contact"> {/* Nombre de clase hace referencia área layout */}
                 <h3>Formulario de contacto</h3>
 
                 <form>
