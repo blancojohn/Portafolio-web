@@ -1,9 +1,10 @@
 #root {
+  background: lightsalmon;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 80px repeat(3, 400px);
   min-height: 100vh;
-  outline: dashed 1px red;
+  outline: dashed 2px black;
   grid-template-areas: /* Disposición para filas y columnas de acuerdo a los nombres creados de las clases  */
     "header header header header"
     "aside aside aside aside"
@@ -14,45 +15,52 @@
 /* Disposición de los elementos del navbar */
 
 
-.posicion-enlaces-navbar {
-  grid-area: header;
+#root .posicion-enlaces-navbar {
+  background: blue;
+  grid-area: 1/2/2/4;
   justify-self: center;
   align-self: center;
-  with: 900px;
+  outline: dashed 2px black;
 }
 
-.posicion-logo {
-  grid-area: header;
-  justify-self: start;
-  align-self: center;
+#root .posicion-logo {
+  background: blue;
+  grid-area: 1/1/2/2;
+  justify-self: center;
+  align-self: center; 
+  outline: dashed 2px black;
 }
 
-.posicion-enlace-formulario {
-  grid-area: header;
-  justify-self: end;
+#root .posicion-enlace-formulario {
+  background: blue;
+  grid-area: 1/4/2/5;
+  justify-self: center;
   align-self: center;
+  outline: dashed 2px black;
 }
 
 /* Disposición de los elementos en el aside */
 
-.disposicion-experiencia {
-    grid-area: 2/2/3/3; /* posiciona los elementos en lacuadrícula especificada */
-    outline: dashed 1px red;
+#root .disposicion-experiencia {
+  background: blue;
+  grid-area: 2/2/3/3; /* posiciona los elementos en lacuadrícula especificada */
+  outline: dashed 2px black;
 }
 
-.disposicion-foto {
+#root .disposicion-foto {
+  background: blue;
   grid-area: 2/3/3/4; /* posiciona la foto en la cuadrícula especificada */
-  outline: dashed 1px red;
+  outline: dashed 2px black;
 }
 
 #root .projects {
     grid-area: projects;
-    outline: dashed 1px red;
+    outline: dashed 2px black;
 }
 
 #root .contact {
     grid-area: contact;
-    outline: dashed 1px red;
+    outline: dashed 2px black;
 }
 
 /* Apariencia elementos navbar */
@@ -60,16 +68,11 @@
 .header, a {
   color: white;
   text-decoration: none;
-  margin: 30px; /* márgenes de los <a> central del header */
+  margin: 30px;
 }
 
 .estilos-enlace-formulario {
   color: red;
-}
-
-body {
-  background-color: black;
-  margin: 0;
 }
 
 h1, h3, h4, small {
