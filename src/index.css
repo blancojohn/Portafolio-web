@@ -1,5 +1,5 @@
 #root {
-  background: lightsalmon;
+  background: /* #ff92acff */ black;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 80px repeat(3, 400px);
@@ -13,17 +13,17 @@
 }
 
 /* Disposición de los elementos del navbar */
-
-
-#root .posicion-enlaces-navbar {
-  background: blue;
+.links-navbar {
+  background: #62484866;
   grid-area: 1/2/2/4;
   justify-self: center;
   align-self: center;
   outline: dashed 2px black;
+  border-radius: 8px;
+  padding: 10px;
 }
 
-#root .posicion-logo {
+.posicion-logo {
   background: blue;
   grid-area: 1/1/2/2;
   justify-self: center;
@@ -31,7 +31,7 @@
   outline: dashed 2px black;
 }
 
-#root .posicion-enlace-formulario {
+.posicion-link-formulario {
   background: blue;
   grid-area: 1/4/2/5;
   justify-self: center;
@@ -41,34 +41,38 @@
 
 /* Disposición de los elementos en el aside */
 
-#root .disposicion-experiencia {
+.disposicion-experiencia {
   background: blue;
   grid-area: 2/2/3/3; /* posiciona los elementos en lacuadrícula especificada */
   outline: dashed 2px black;
 }
 
-#root .disposicion-foto {
+.disposicion-foto {
   background: blue;
   grid-area: 2/3/3/4; /* posiciona la foto en la cuadrícula especificada */
   outline: dashed 2px black;
 }
 
-#root .projects {
+.projects {
     grid-area: projects;
     outline: dashed 2px black;
 }
 
-#root .contact {
+.contact {
     grid-area: contact;
     outline: dashed 2px black;
 }
 
 /* Apariencia elementos navbar */
 
-.header, a {
+.link-b {
   color: white;
   text-decoration: none;
-  margin: 30px;
+  margin: 20px;
+}
+
+.link-n {
+  color: black; 
 }
 
 .estilos-enlace-formulario {
