@@ -34,15 +34,17 @@
 }
 
 .Header-bg-ga-right-oul-br-p {
-  background: blue;
+  background: #fff;
   grid-area: 1/4/2/5;
   justify-self: center;
   align-self: center;
-  outline: dashed 2px black;
+  border-radius: 8px;
+  padding: 5px 10px;
 }
 
 .Header-link-c-td-m--negro {
-  color: red;
+  color: #000;
+  text-decoration: none;
 }
 
 .Header-bg-ga-left-oul-br-p {

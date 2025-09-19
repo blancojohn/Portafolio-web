@@ -1,6 +1,8 @@
 const Header = () => {
     return (
-        <>
+        <>  
+            {/* cada elemento <header se alinea y posiciona en las cuadrículas de la grid según columnas y filas */}
+            
             <header className="Header-bg-ga-left-oul-br-p">
                 <a href="/">LOGO</a>
             </header>
