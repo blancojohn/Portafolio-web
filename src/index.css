@@ -13,7 +13,7 @@
 }
 
 /* Disposición de los elementos del navbar */
-.links-navbar {
+.Header-bg-ga-center-oul-br-p {
   background: #62484866;
   grid-area: 1/2/2/4;
   justify-self: center;
@@ -23,21 +23,43 @@
   padding: 10px;
 }
 
-.posicion-logo {
-  background: blue;
-  grid-area: 1/1/2/2;
-  justify-self: center;
-  align-self: center; 
-  outline: dashed 2px black;
+.Header-link-c-td-m {
+  color: #707070ff;
+  text-decoration: none;
+  margin: 20px;
 }
 
-.posicion-link-formulario {
+.Header-link-c-td-m:hover {
+  color: #fff;
+}
+
+.Header-bg-ga-right-oul-br-p {
   background: blue;
   grid-area: 1/4/2/5;
   justify-self: center;
   align-self: center;
   outline: dashed 2px black;
 }
+
+.Header-link-c-td-m--negro {
+  color: red;
+}
+
+.Header-bg-ga-left-oul-br-p {
+  background: blue;
+  grid-area: 1/1/2/2;
+  justify-self: center;
+  align-self: center; 
+  outline: dashed 2px black;
+} 
+
+/* .posicion-link-formulario {
+  background: blue;
+  grid-area: 1/4/2/5;
+  justify-self: center;
+  align-self: center;
+  outline: dashed 2px black;
+} */
 
 /* Disposición de los elementos en el aside */
 
@@ -64,12 +86,6 @@
 }
 
 /* Apariencia elementos navbar */
-
-.link-b {
-  color: white;
-  text-decoration: none;
-  margin: 20px;
-}
 
 .link-n {
   color: black; 
