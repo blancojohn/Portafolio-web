@@ -1,5 +1,6 @@
+/*
 body {
-  background: #000;
+   background: #000;
 }
 
 #root {
@@ -7,7 +8,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 80px repeat(3, 400px);
   min-height: 100vh;
-  grid-template-areas: /* Disposición para filas y columnas de acuerdo a los nombres creados de las clases  */
+  grid-template-areas: Disposición para filas y columnas de acuerdo a los nombres creados de las clases  
     "header header header header"
     "aside aside aside aside"
     "projects projects projects projects"
@@ -31,7 +32,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-/* 
+ 
 .Header-bg-ga-center-oul-br-p {
   background: #62484866;
   grid-area: 1/2/2/4;
@@ -113,9 +114,97 @@ h1, h3, h4, small {
   font-family: sans-serif;
 }
 
- */
+ 
 
  .contact {
     grid-area: contact;
     outline: dashed 2px black;
+}
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 90%;
+  margin: 2em auto;
+  font:
+    1em/1.3 Arial,
+    Helvetica,
+    sans-serif;
+}
+
+a:link,
+a:visited {
+  color: #333;
+}
+
+nav ul,
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav a:link,
+nav a:visited {
+  background-color: rgb(207 232 220 / 20%);
+  border: 2px solid rgb(79 185 227);
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: rgb(207 232 220 / 70%);
+}
+
+.related {
+  background-color: rgb(79 185 227 / 30%);
+  border: 1px solid rgb(79 185 227);
+  padding: 10px;
+}
+
+.sidebar {
+  background-color: rgb(207 232 220 / 50%);
+  padding: 10px;
+}
+
+article {
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 40em) {
+  article {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 20px;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 70em) {
+  main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 20px;
+  }
+
+  article {
+    margin-bottom: 0;
+  }
+
+  footer {
+    border-top: 1px solid #ccc;
+    margin-top: 2em;
+  }
 }
