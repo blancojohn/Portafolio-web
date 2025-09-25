@@ -1,4 +1,4 @@
-/*
+
 body {
    background: #000;
 }
@@ -8,7 +8,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 80px repeat(3, 400px);
   min-height: 100vh;
-  grid-template-areas: Disposición para filas y columnas de acuerdo a los nombres creados de las clases  
+  grid-template-areas:  
     "header header header header"
     "aside aside aside aside"
     "projects projects projects projects"
@@ -32,95 +32,44 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+.Header-menu-hamburguesa {
+  width: 30px;
+  height: 30px;
+  background-color: #222; 
+  border-radius: 6px;
+  border-width: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;               
+  cursor: pointer;
+}
+
+.Header-menu-hamburguesa span {
+  display: block;
+  width: 20px;            
+  height: 1.5px;           
+  background-color: #fff; 
+  border-radius: 2px;
+}
+
+.Header-menu-hamburguesa:hover {
+  background-color: #2d2d2dff; 
+} 
+
+.Header-menu-hamburguesa:active {
+  background-color: #383737ff; 
+}
+
  
-.Header-bg-ga-center-oul-br-p {
-  background: #62484866;
-  grid-area: 1/2/2/4;
-  justify-self: center;
-  align-self: center;
-  outline: dashed 2px black;
-  border-radius: 8px;
-  padding: 10px;
-}
-
-.Header-link-c-td-m {
-  color: #707070ff;
-  text-decoration: none;
-  margin: 20px;
-}
-
-.Header-link-c-td-m:hover {
-  color: #fff;
-}
-
-.Header-bg-ga-right-oul-br-p {
-  background: #fff;
-  grid-area: 1/4/2/5;
-  justify-self: center;
-  align-self: center;
-  border-radius: 8px;
-  padding: 5px 10px;
-}
-
-.Header-link-c-td-m--negro {
-  color: #000;
-  text-decoration: none;
-}
-
-.Header-bg-ga-left-oul-br-p {
-  background: blue;
-  grid-area: 1/1/2/2;
-  justify-self: center;
-  align-self: center; 
-  outline: dashed 2px black;
-} 
-
-.posicion-link-formulario {
-  background: blue;
-  grid-area: 1/4/2/5;
-  justify-self: center;
-  align-self: center;
-  outline: dashed 2px black;
-} 
-
-
-.disposicion-experiencia {
-  background: blue;
-  grid-area: 2/2/3/3; 
-  outline: dashed 2px black;
-}
-
-.disposicion-foto {
-  background: blue;
-  grid-area: 2/3/3/4; 
-  outline: dashed 2px black;
-}
-
-.projects {
-    grid-area: projects;
-    outline: dashed 2px black;
-}
-
-.link-n {
-  color: black; 
-}
-
-.estilos-enlace-formulario {
-  color: red;
-}
-
 h1, h3, h4, small {
   color: white;
   font-family: sans-serif;
 }
 
- 
-
- .contact {
-    grid-area: contact;
-    outline: dashed 2px black;
-}
-*/
+/* REGLAS DE EJEMPLO PARA ACTIVAR MEDIAS QUERYS 
 
 * {
   box-sizing: border-box;
@@ -208,3 +157,7 @@ article {
     margin-top: 2em;
   }
 }
+
+*/
+
+

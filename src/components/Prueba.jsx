@@ -1,4 +1,4 @@
-const Prueba = () => {
+/* const Prueba = () => {
     return (
         <>
             <div className="wrapper">
@@ -86,4 +86,4 @@ const Prueba = () => {
     )
 }
 
-export default Prueba;
+export default Prueba; */

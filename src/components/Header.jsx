@@ -1,8 +1,6 @@
 const Header = () => {
     return (
         <>
-            {/* cada elemento <header se alinea y posiciona en las cuadrículas de la grid según columnas y filas */}
-
             <header className="Header-header">
                 <div className="Header-div">
                     <h1>
@@ -17,12 +15,12 @@ const Header = () => {
                     </h1>
                     <div className="">
                         <button
-                            className=""
+                            className="Header-menu-hamburguesa"
                             onClick={null}
                         >
-                            <spa>
-                                Menú
-                            </spa>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </button>
                         Navbar
                     </div>
@@ -34,6 +32,8 @@ const Header = () => {
 }
 
 export default Header
+
+
 
 
 
