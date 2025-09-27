@@ -39,12 +39,18 @@ body {
   background-color: #222; 
   border-radius: 6px;
   border-width: 0px;
-  display: flex;
+  display: none; /* Está condicionada con la querie de abajo para mostrar btn-menú según pixeles */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;               
   cursor: pointer;
+}
+
+@media screen and (max-width: 748px) {
+  .Header-menu-hamburguesa {
+    display: flex;
+  }
 }
 
 .Header-menu-hamburguesa span {
@@ -56,13 +62,12 @@ body {
 }
 
 .Header-menu-hamburguesa:hover {
-  background-color: #2d2d2dff; 
+  background-color: #2d2d2dff;
 } 
 
 .Header-menu-hamburguesa:active {
   background-color: #383737ff; 
 }
-
  
 h1, h3, h4, small {
   color: white;
