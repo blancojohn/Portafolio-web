@@ -1,4 +1,8 @@
+import Navbar from "./Navbar"
+
+
 const Header = () => {
+    
     return (
         <>
             <header className="Header-header">
@@ -22,7 +26,7 @@ const Header = () => {
                             <span></span>
                             <span></span>
                         </button>
-                        Navbar
+                        <Navbar />
                     </div>
                     <a href="/">Contáctame</a>
                 </div>
