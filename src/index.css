@@ -39,7 +39,7 @@ body {
   background-color: #222; 
   border-radius: 6px;
   border-width: 0px;
-  display: none; /* Está condicionada con la querie de abajo para mostrar btn-menú según pixeles */
+  display: none; /* Está condicionada con la querie de abajo para mostrar btn-menú según ancho de la pantalla */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -47,18 +47,28 @@ body {
   cursor: pointer;
 }
 
-@media screen and (max-width: 748px) {
-  .Header-menu-hamburguesa {
-    display: flex;
-  }
-}
-
-.Header-menu-hamburguesa span {
+.Header-menu-hamburguesa span { /* Crea menú hamburguesa */
   display: block;
   width: 20px;            
   height: 1.5px;           
   background-color: #fff; 
   border-radius: 2px;
+}
+
+.Nav-link--hidden {
+  display: none; /* Está condicionada con la querie de abajo para mostrar el enlace contáctame según ancho de la pantalla */
+}
+
+@media screen and (max-width: 748px) {
+  .Header-menu-hamburguesa {
+    display: flex;
+  }
+  .Nav-link--hidden {
+    display: inline-block;
+  }
+  .Header-link-contactame {
+    display: none;
+  }
 }
 
 .Header-menu-hamburguesa:hover {

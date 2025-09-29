@@ -4,35 +4,37 @@ import { useRef } from "react";
 const Navbar = () => {
 
     const lastActiveLink = useRef();
+    const activeBox= useRef()
 
     const dataForNavbar = [
         {
-            label: 'Home',
-            link: '#home',
-            className: 'nav-link active',
+            label: 'Bienvenido',
+            link: '#bienvenido',
+            className: 'Nav-link--active',
             ref: lastActiveLink
         },
         {
-            label: 'About',
-            link: '#about',
-            className: 'nav-link'
+            label: 'Sobre mí',
+            link: '#sobre-mi',
+            className: 'Nav-link'
         },
         {
-            label: 'Work',
-            link: '#work',
-            className: 'nav-link'
+            label: 'Proyectos',
+            link: '#proyectos',
+            className: 'Nav-link'
         },
         {
-            label: 'Contact',
-            link: '#contact',
-            className: 'nav-link md:hidden'
+            label: 'Contáctame',
+            link: '#contactame',
+            className: 'Nav-link--hidden'
         }
     ];
 
     let itemsNavbar= dataForNavbar.map(({ label, link, className, ref }, key) => (
         <a
             href={link}
-            key={ref}
+            key={key}
+            ref={ref}
             className={className}
             onClick={null}
         >
@@ -46,6 +48,10 @@ const Navbar = () => {
                 {
                     itemsNavbar
                 }
+                <div
+                className="active-box"
+                ref={activeBox}
+                ></div>
             </nav>
         </>
     )

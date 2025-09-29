@@ -2,7 +2,7 @@ import Navbar from "./Navbar"
 
 
 const Header = () => {
-    
+
     return (
         <>
             <header className="Header-header">
@@ -28,7 +28,11 @@ const Header = () => {
                         </button>
                         <Navbar />
                     </div>
-                    <a href="/">Contáctame</a>
+                    <a
+                        href="/"
+                        className="Header-link-contactame"
+                    >Contáctame
+                    </a>
                 </div>
             </header>
         </>
