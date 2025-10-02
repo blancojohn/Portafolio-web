@@ -1,7 +1,8 @@
 import Navbar from "./Navbar"
-
+import { useState } from "react"
 
 const Header = () => {
+    const [navOpen, setNavOpen]= useState(false);
 
     return (
         <>
@@ -17,7 +18,7 @@ const Header = () => {
                             />
                         </a>
                     </h1>
-                    <div className="">
+                    <div className="Header-div-display">
                         <button
                             className="Header-menu-hamburguesa"
                             onClick={null}
@@ -26,11 +27,11 @@ const Header = () => {
                             <span></span>
                             <span></span>
                         </button>
-                        <Navbar />
+                        <Navbar navOpen={navOpen}/>
                     </div>
                     <a
                         href="/"
-                        className="Header-link-contactame"
+                        className="Header-contactame-visibility"
                     >Contáctame
                     </a>
                 </div>

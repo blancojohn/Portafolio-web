@@ -33,18 +33,25 @@ body {
   align-items: center;
 }
 
+.Header-div-display {
+  display: flex;
+  position: relative;
+  justify-content: end;
+}
+
 .Header-menu-hamburguesa {
   width: 30px;
   height: 30px;
   background-color: #222; 
   border-radius: 6px;
   border-width: 0px;
-  display: none; /* Está condicionada con la querie de abajo para mostrar btn-menú según ancho de la pantalla */
+  display: flex; /* Está condicionada con la querie de abajo para mostrar btn-menú según ancho de la pantalla */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;               
   cursor: pointer;
+  visibility: hidden;
 }
 
 .Header-menu-hamburguesa span { /* Crea menú hamburguesa */
@@ -55,28 +62,44 @@ body {
   border-radius: 2px;
 }
 
-.Nav-link--hidden {
-  display: none; /* Está condicionada con la querie de abajo para mostrar el enlace contáctame según ancho de la pantalla */
-}
-
-@media screen and (max-width: 748px) {
-  .Header-menu-hamburguesa {
-    display: flex;
-  }
-  .Nav-link--hidden {
-    display: inline-block;
-  }
-  .Header-link-contactame {
-    display: none;
-  }
-}
-
 .Header-menu-hamburguesa:hover {
   background-color: #2d2d2dff;
 } 
 
 .Header-menu-hamburguesa:active {
   background-color: #383737ff; 
+}
+
+.Navbar-nav--visibility {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  margin-top: 8px;
+  padding: 8px;
+  background-color: #222;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
+} 
+
+.Navbar-contactame--visibility {
+  display: none; /* Está condicionada con la querie de abajo para mostrar el enlace contáctame según ancho de la pantalla */
+}
+
+@media screen and (max-width: 748px) {
+  .Header-menu-hamburguesa {
+    visibility: visible;
+  }
+  .Navbar-contactame--visibility {
+    display: inline-block;
+  }
+  .Header-contactame-visibility {
+    display: none;
+  }
 }
  
 h1, h3, h4, small {

@@ -1,32 +1,32 @@
 import { useRef } from "react";
 
 
-const Navbar = () => {
+const Navbar = ({ navOpen }) => {
 
     const lastActiveLink = useRef();
     const activeBox= useRef()
 
     const dataForNavbar = [
         {
-            label: 'Bienvenido',
-            link: '#bienvenido',
-            className: 'Nav-link--active',
+            label: 'Inicio',
+            link: '#inicio',
+            className: 'Navbar-link--active',
             ref: lastActiveLink
         },
         {
             label: 'Sobre mí',
             link: '#sobre-mi',
-            className: 'Nav-link'
+            className: 'Navbar-link'
         },
         {
             label: 'Proyectos',
             link: '#proyectos',
-            className: 'Nav-link'
+            className: 'Navbar-link'
         },
         {
             label: 'Contáctame',
             link: '#contactame',
-            className: 'Nav-link--hidden'
+            className: 'Navbar-contactame--visibility'
         }
     ];
 
@@ -44,7 +44,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="">
+            <nav className={"Navbar-nav--visibility " + (navOpen ? "active" : "")}>
                 {
                     itemsNavbar
                 }
