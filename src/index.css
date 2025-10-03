@@ -15,7 +15,7 @@ body {
     "contact contact contact conatact" 
 }
 
-.Header-header {
+.Header-header-container {
   grid-area: header;
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@ body {
   align-items: center;
 }
 
-.Header-div-display {
+.Header-div-display-botton {
   display: flex;
   position: relative;
   justify-content: end;
@@ -42,7 +42,8 @@ body {
 .Header-menu-hamburguesa {
   width: 30px;
   height: 30px;
-  background-color: #222; 
+  background-color: #222;
+  color: #fff; 
   border-radius: 6px;
   border-width: 0px;
   display: flex; /* Está condicionada con la querie de abajo para mostrar btn-menú según ancho de la pantalla */
@@ -63,15 +64,14 @@ body {
 }
 
 .Header-menu-hamburguesa:hover {
-  background-color: #2d2d2dff;
+  border: #fff solid 1px; 
 } 
 
 .Header-menu-hamburguesa:active {
   background-color: #383737ff; 
-}
+} 
 
 .Navbar-nav--visibility {
-  display: flex;
   position: absolute;
   top: 100%;
   margin-top: 8px;
@@ -82,7 +82,7 @@ body {
   visibility: hidden;
 }
 
-.active {
+.active { /* Muestra los links del menú al hacer click al menú hamburguesa */
   visibility: visible;
 } 
 
@@ -102,9 +102,8 @@ body {
   }
 }
  
-h1, h3, h4, small {
-  color: white;
-  font-family: sans-serif;
+body {
+  color: #fff;
 }
 
 /* REGLAS DE EJEMPLO PARA ACTIVAR MEDIAS QUERYS 

@@ -2,11 +2,11 @@ import Navbar from "./Navbar"
 import { useState } from "react"
 
 const Header = () => {
-    const [navOpen, setNavOpen]= useState(false);
+    const [navOpen, setNavOpen] = useState(false);
 
     return (
         <>
-            <header className="Header-header">
+            <header className="Header-header-container">
                 <div className="Header-div">
                     <h1>
                         <a href="/" className="">
@@ -18,16 +18,25 @@ const Header = () => {
                             />
                         </a>
                     </h1>
-                    <div className="Header-div-display">
+                    <div className="Header-div-display-botton">
                         <button
                             className="Header-menu-hamburguesa"
-                            onClick={null}
+                            onClick={() => setNavOpen((prev) => !prev)}
                         >
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            {
+                                navOpen ? (
+                                    "X"
+                                ) : (
+                                    <>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </>
+
+                                )
+                            }
                         </button>
-                        <Navbar navOpen={navOpen}/>
+                        <Navbar navOpen={navOpen} />
                     </div>
                     <a
                         href="/"
