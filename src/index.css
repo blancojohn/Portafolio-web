@@ -72,19 +72,15 @@ body {
 } 
 
 .Navbar-nav--visibility {
-  position: absolute;
+  display: flex;
+  flex-direction: row;
   top: 100%;
+  gap: 10px;
   margin-top: 8px;
   padding: 8px;
   background-color: #222;
   border-radius: 8px;
-  border: 1px solid #fff;
-  visibility: hidden;
 }
-
-.active { /* Muestra los links del menú al hacer click al menú hamburguesa */
-  visibility: visible;
-} 
 
 .Navbar-contactame--visibility {
   display: none; /* Está condicionada con la querie de abajo para mostrar el enlace contáctame según ancho de la pantalla */
@@ -94,16 +90,29 @@ body {
   .Header-menu-hamburguesa {
     visibility: visible;
   }
-  .Navbar-contactame--visibility {
-    display: inline-block;
-  }
   .Header-contactame-visibility {
     display: none;
   }
+  .Navbar-contactame--visibility {
+    display: inline-block;
+  }
+  .Navbar-nav--visibility {
+    position: absolute;
+    flex-direction: column;
+    visibility: hidden;
+  }
+  .Navbar-nav--visibility.active { /* Muestra los links del menú al hacer click al menú hamburguesa */
+    visibility: visible;
+} 
 }
  
 body {
   color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* REGLAS DE EJEMPLO PARA ACTIVAR MEDIAS QUERYS 
