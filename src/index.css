@@ -110,9 +110,16 @@ body {
   color: #fff;
 }
 
-a {
-  color: #fff;
+/* ESTILOS LINKS DEL NAVBAR */
+
+.Navbar-link--active, .Navbar-contactame--visibility, .Navbar-link {
+  color: #606060ff;
   text-decoration: none;
+  padding-left: 9px;
+}
+
+.Navbar-link--active:hover, .Navbar-contactame--visibility:hover, .Navbar-link:hover {
+  color: #fff;
 }
 
 /* REGLAS DE EJEMPLO PARA ACTIVAR MEDIAS QUERYS 
