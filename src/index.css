@@ -115,11 +115,20 @@ body {
 .Navbar-link--active, .Navbar-contactame--visibility, .Navbar-link {
   color: #606060ff;
   text-decoration: none;
-  padding-left: 9px;
+  /* padding-left: 9px; */
+  z-index: 1;
 }
 
 .Navbar-link--active:hover, .Navbar-contactame--visibility:hover, .Navbar-link:hover {
   color: #fff;
+}
+
+.active-box {
+  position: absolute;
+  width: 68px;
+  height: 20px;
+  border-radius: 5px;
+  background: #fff;
 }
 
 /* REGLAS DE EJEMPLO PARA ACTIVAR MEDIAS QUERYS 
