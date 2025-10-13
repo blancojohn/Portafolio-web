@@ -25,7 +25,8 @@ const Navbar = ({ navOpen }) => {
     };
 
 
-    useEffect(initActiveBox, [])
+    useEffect(initActiveBox, []);
+    window.addEventListener("resize", initActiveBox)
 
     const dataForNavbar = [
         {
@@ -70,7 +71,7 @@ const Navbar = ({ navOpen }) => {
                     itemsNavbar
                 }
                 <div
-                    className="active-box"
+                    className="Navbar-active-box"
                     ref={activeBox}
                 ></div>
             </nav>
