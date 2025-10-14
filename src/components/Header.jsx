@@ -39,8 +39,8 @@ const Header = () => {
                         <Navbar navOpen={navOpen} />
                     </div>
                     <a
-                        href="/"
-                        className="Header-contactame-visibility"
+                        href="#contactame"
+                        className="Header-contactame--visibility"
                     >Contáctame
                     </a>
                 </div>

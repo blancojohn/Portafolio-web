@@ -13,7 +13,7 @@ const Navbar = ({ navOpen }) => {
         activeBox.current.style.height = lastActiveLink.current.offsetHeight + 'px';
     }
 
-    const activeCurrentLink = (event) => {
+    const handleCurrentLink = (event) => {
         lastActiveLink.current?.classList.remove('active');
         event.target.classList.add('active');
         lastActiveLink.current = event.target;
@@ -58,7 +58,7 @@ const Navbar = ({ navOpen }) => {
             key={key}
             ref={ref}
             className={className}
-            onClick={activeCurrentLink}
+            onClick={handleCurrentLink}
         >
             {label}
         </a>

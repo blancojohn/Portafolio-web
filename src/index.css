@@ -71,7 +71,23 @@ body {
 
 .Header-menu-hamburguesa:active {
   background-color: #383737ff; 
-} 
+}
+
+.Header-contactame--visibility {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 35px;
+  border-radius: 8px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+.Header-contactame--visibility:active {
+  background: #c7c7c7ff;
+}
 
 .Navbar-nav--visibility {
   display: flex;
@@ -113,7 +129,7 @@ body {
   .Header-menu-hamburguesa {
     visibility: visible;
   }
-  .Header-contactame-visibility {
+  .Header-contactame--visibility {
     display: none;
   }
   .Navbar-contactame--visibility {
