@@ -1,6 +1,7 @@
 
 body {
    background: #000;
+   color: #fff;
 }
 
 #root {
@@ -12,7 +13,7 @@ body {
     "header header header header"
     "aside aside aside aside"
     "projects projects projects projects"
-    "contact contact contact conatact" 
+    "contact contact contact conatact";
 }
 
 /* RELACIONADO AL NAVBAR DE NAVEGACIÓN Y HEADER DEL SITE */
