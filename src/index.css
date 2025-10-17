@@ -4,19 +4,7 @@ body {
    color: #fff;
 }
 
-#root {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 80px repeat(3, 400px);
-  min-height: 100vh;
-  grid-template-areas:  
-    "header header header header"
-    "aside aside aside aside"
-    "projects projects projects projects"
-    "contact contact contact conatact";
-}
-
-/* RELACIONADO AL NAVBAR DE NAVEGACIÓN Y HEADER DEL SITE */
+/* COMPONENTE HEADER Y NAVBAR */
 
 .Header-header-container {
   grid-area: header;
@@ -125,7 +113,6 @@ body {
   scale: 1.1;
 }
 
-
 @media screen and (max-width: 748px) {
   .Header-menu-hamburguesa {
     visibility: visible;
@@ -148,6 +135,52 @@ body {
     right: 14px;
 } 
 }
+
+/* COMPONENTE PERSON */
+.Person-section {
+  padding-top: 112px;
+}
+
+.Person-div-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px; 
+  padding-right: 16px; 
+  max-width: 1280px;
+  align-items: center;
+}
+
+.Person-div-intro {
+  display: flex;
+  align-items: center;
+}
+
+.Person-avatar-box {
+  width: 36px;
+  height: 36px;margin-inline-end: 20px;
+  margin-inline-start: 0;
+}
+
+@media (min-width: 1024px){
+  .Person-section {
+    padding-top: 144px;
+  }
+  .Person-div-container {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .Person-div-container {
+    max-width: 1152px; 
+  }
+}
+
+
+
  
 
 

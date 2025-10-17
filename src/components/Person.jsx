@@ -5,13 +5,13 @@ const Person = () => {
     return (
         <section
             id="home"
-            className=""
+            className="Person-section"
         >
-            <div className="">
+            <div className="Person-div-container">
 
                 <div>
-                    <div className="">
-                        <figure className="">
+                    <div className="Person-div-intro">
+                        <figure className="Person-avatar-box">
                             <img
                                 src="/images/avatar-1.jpg"
                                 width={40}
@@ -44,8 +44,8 @@ const Person = () => {
                     <figure className="">
                         <img
                             src="/images/jbfoto.png"
-                            width={656}
-                            height={800}
+                            width={400}
+                            height={500}
                             alt="John Blanco"
                             className=""
                         />
