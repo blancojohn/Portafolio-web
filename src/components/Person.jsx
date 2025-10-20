@@ -17,10 +17,11 @@ const Person = () => {
                                 width={40}
                                 height={40}
                                 alt="John Blanco"
-                                className=""
+                                className="Person-avatar"
                             />
                         </figure>
-                        <div className="">
+
+                        <div className="Person-div-text-availability">
                             <span className="">
                                 <span className=""></span>
                             </span>

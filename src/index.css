@@ -146,7 +146,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px; 
-  padding-right: 16px; 
   max-width: 1280px;
   align-items: center;
 }
@@ -158,8 +157,23 @@ body {
 
 .Person-avatar-box {
   width: 36px;
-  height: 36px;margin-inline-end: 20px;
+  height: 36px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-inline-end: 20px;
   margin-inline-start: 0;
+}
+
+.Person-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Person-div-text-availability {
+  font-size: 15px;
+  letter-spacing: 0.025em;
+  color: #606060ff;
 }
 
 @media (min-width: 1024px){
@@ -169,13 +183,15 @@ body {
   .Person-div-container {
     display: grid;
     grid-template-columns: repeat(2, 500px);
-    gap: 2.5rem;
+    padding-left: 32px;
+    gap: 40px;
   }
 }
 
 @media (min-width: 1280px) {
   .Person-div-container {
-    max-width: 1152px; 
+    max-width: 1152px;
+
   }
 }
 
