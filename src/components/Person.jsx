@@ -22,8 +22,8 @@ const Person = () => {
                         </figure>
 
                         <div className="Person-div-text-availability">
-                            <span className="">
-                                <span className=""></span>
+                            <span className="Person-ping-container">
+                                <span className="Person-ping"></span>
                             </span>
 
                             Disponible para trabajar
