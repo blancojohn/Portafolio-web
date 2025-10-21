@@ -30,7 +30,7 @@ const Person = () => {
                         </div>
                     </div>
 
-                    <h2 className="">
+                    <h2 className="Person-h2-headline">
                         Building Scalable Modern Websites for the Future
                     </h2>
 
@@ -44,9 +44,9 @@ const Person = () => {
                 <div className="">
                     <figure className="">
                         <img
-                            src="/images/jbfoto.png"
-                            width={400}
-                            height={500}
+                            src="/images/jb-foto.png"
+                            width={656}
+                            height={800}
                             alt="John Blanco"
                             className=""
                         />

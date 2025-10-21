@@ -142,12 +142,27 @@ body {
 }
 
 .Person-div-container {
-  width: 100%;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px; 
-  max-width: 1280px;
-  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px; 
+}
+  
+@media (min-width: 1024px){
+  .Person-div-container {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    padding-left: 32px;
+    padding-right:32px;
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .Person-div-container {
+    max-width: 1152px;
+  }
 }
 
 .Person-div-intro {
@@ -201,21 +216,35 @@ body {
   }
 }
 
-@media (min-width: 1024px){
-  .Person-div-container {
-    display: grid;
-    grid-template-columns: repeat(2, 500px);
-    padding-left: 32px;
-    gap: 40px;
+.Person-h2-headline {
+  max-width: 15ch;     
+  margin-top: 20px;
+  margin-bottom: 32px;
+  max-width: max-content;
+  font-size: 55px;          
+  line-height: 1.25;        
+  font-weight: 600;         
+
+  background: -webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 640px) {
+  .Person-h2-headline {
+    max-width: 20ch;  
   }
 }
 
-@media (min-width: 1280px) {
-  .Person-div-container {
-    max-width: 1152px;
-
+@media (min-width: 1024px) {
+  .Person-h2-headline {
+    max-width: 15ch;   
+    margin-bottom: 40px; 
   }
 }
+
+
+
 
 
 
