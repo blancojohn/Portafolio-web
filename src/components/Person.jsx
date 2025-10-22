@@ -25,7 +25,6 @@ const Person = () => {
                             <span className="Person-ping-container">
                                 <span className="Person-ping"></span>
                             </span>
-
                             Disponible para trabajar
                         </div>
                     </div>
@@ -34,19 +33,19 @@ const Person = () => {
                         Building Scalable Modern Websites for the Future
                     </h2>
 
-                    <div className="">
+                    <div className="Person-buttons-box">
                         ButtonPrimary
 
                         ButonOutline
                     </div>
                 </div>
 
-                <div className="">
-                    <figure className="">
+                <div className="Person-photo-box">
+                    <figure className="Person-figure-background">
                         <img
                             src="/images/jb-foto.png"
-                            width={656}
-                            height={800}
+                            width={500}
+                            height={500}
                             alt="John Blanco"
                             className=""
                         />

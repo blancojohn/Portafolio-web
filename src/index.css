@@ -138,7 +138,7 @@ body {
 
 /* COMPONENTE PERSON */
 .Person-section {
-  padding-top: 60px;
+  padding-top: 75px;
 }
 
 .Person-div-container {
@@ -150,6 +150,9 @@ body {
 }
   
 @media (min-width: 1024px){
+  .Person-section {
+    padding-top: 150px;
+  } 
   .Person-div-container {
     display: grid;
     grid-template-columns: repeat(2, 500px);
@@ -168,6 +171,7 @@ body {
 .Person-div-intro {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 
 .Person-avatar-box {
@@ -220,8 +224,7 @@ body {
   max-width: 15ch;     
   margin-top: 20px;
   margin-bottom: 32px;
-  max-width: max-content;
-  font-size: 55px;          
+  font-size: 48px;          
   line-height: 1.25;        
   font-weight: 600;         
 
@@ -234,14 +237,55 @@ body {
   .Person-h2-headline {
     max-width: 20ch;  
   }
-}
+} 
 
 @media (min-width: 1024px) {
   .Person-h2-headline {
     max-width: 15ch;   
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
+    font-size: 55px;
+    line-height: 1.15;
   }
 }
+
+/* Por ahora no hace nada */
+.Person-buttons-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.Person-photo-box {
+  display: none;
+}
+
+.Person-figure-background {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 60px;
+  overflow: hidden;
+  background-image: -webkit-linear-gradient(
+    top,
+    #38bdf8 0%,                  
+    rgba(56, 189, 248, 0.4) 25%, 
+    #000000ff 65%                  
+  );
+
+  background-image: linear-gradient(
+    to top,
+    #38bdf8 0%,
+    rgba(56, 189, 248, 0.4) 25%,
+    #000000ff 65%
+  );
+}
+
+@media (min-width: 1024px){
+  .Person-photo-box {
+    display: block;
+  }
+}
+
+
 
 
 
