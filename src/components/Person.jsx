@@ -1,3 +1,4 @@
+import { ButtonOutline, ButtonPrimary } from "./Button"
 
 
 
@@ -34,9 +35,9 @@ const Person = () => {
                     </h2>
 
                     <div className="Person-buttons-box">
-                        ButtonPrimary
+                        <ButtonPrimary label={"Download CV"}/>
 
-                        ButonOutline
+                        <ButtonOutline label={"Scroll down"} href={"#sobre-mi"}/>
                     </div>
                 </div>
 
