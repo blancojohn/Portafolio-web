@@ -16,7 +16,7 @@ const ButtonPrimary = ({
             >
                 {label}
                 {icon ?
-                    <span className="material-symbols-rounded" aria-hidden="true">
+                    <span className="Button-icon">
                         {icon}
                     </span>
                     : undefined
@@ -28,7 +28,7 @@ const ButtonPrimary = ({
             <button className={"ButtonPrimary"}>
                 {label}
                 {icon ?
-                    <span className="material-symbols-rounded" aria-hidden="true">
+                    <span className="Button-icon">
                         {icon}
                     </span>
                     : undefined
@@ -53,7 +53,7 @@ const ButtonOutline = ({
             >
                 {label}
                 {icon ?
-                    <span className="material-symbols-rounded" aria-hidden="true">
+                    <span className="Button-icon">
                         {icon}
                     </span>
                     : undefined
@@ -65,7 +65,7 @@ const ButtonOutline = ({
             <button className={"ButtonOutline"}>
                 {label}
                 {icon ?
-                    <span className="material-symbols-rounded" aria-hidden="true">
+                    <span className="Button-icon">
                         {icon}
                     </span>
                     : undefined

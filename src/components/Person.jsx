@@ -1,8 +1,11 @@
 import { ButtonOutline, ButtonPrimary } from "./Button"
-
-
+import { LuDownload } from "react-icons/lu";
+import { LuArrowDown } from "react-icons/lu";
 
 const Person = () => {
+    let iconDownload= <LuDownload />;
+    let iconScrollDown= <LuArrowDown />;
+
     return (
         <section
             id="home"
@@ -35,9 +38,9 @@ const Person = () => {
                     </h2>
 
                     <div className="Person-buttons-box">
-                        <ButtonPrimary label={"Download CV"}/>
+                        <ButtonPrimary label={"Download CV"} icon={iconDownload}/>
 
-                        <ButtonOutline label={"Scroll down"} href={"#sobre-mi"}/>
+                        <ButtonOutline label={"Scroll down"} icon={iconScrollDown} href={"#sobre-mi"}/>
                     </div>
                 </div>
 
@@ -48,7 +51,7 @@ const Person = () => {
                             width={500}
                             height={500}
                             alt="John Blanco"
-                            className=""
+                            className="Person-img"
                         />
                     </figure>
                 </div>
