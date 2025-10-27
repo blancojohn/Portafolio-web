@@ -18,7 +18,7 @@ const Projects = () => {
         },
         {
             imgSrc: '',
-            title: 'Full stack music app',
+            title: 'Star Wars',
             tags: ['API', 'Ecommerce', 'Development'],
             projectLink: 'https://github.com/blancojohn/Ecommerce-StarWars-reading-list'
         },

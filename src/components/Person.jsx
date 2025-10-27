@@ -34,7 +34,7 @@ const Person = () => {
                     </div>
 
                     <h2 className="Person-h2-headline">
-                        Building Scalable Modern Websites for the Future
+                        Creación de sitios web modernos y escalables
                     </h2>
 
                     <div className="Person-buttons-box">
