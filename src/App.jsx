@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Person from "./components/Person";
+import Project from "./components/Project";
 /* import Aside from "./components/Aside";
-import Projects from "./components/Projects";
 import Contact from "./components/Contact";  */
 
 /* import Prueba from "./components/Prueba"; */
@@ -12,10 +12,10 @@ const App = () => {
       <Header />
       <main>
         <Person />
+        <Project />
       </main>
-      {/* <Aside />
-      <Projects />
-      <Contact />  */}
+      {/* <Aside /> */}
+      {/* <Contact /> */}
       {/* <Prueba /> */}
     </>
   )
