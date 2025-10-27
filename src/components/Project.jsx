@@ -1,3 +1,4 @@
+import ProjectCard from "./ProjectCard";
 
 
 
@@ -25,7 +26,7 @@ const Projects = () => {
 
     const projects=  data.map(({imgSrc, title, tags, projectLink},
                         key) => (
-                            "Projectscard"
+                            <ProjectCard key={key} imgSrc={imgSrc} title={title} tags={tags} projetLink={projectLink}/>
                         ))
 
     return (
