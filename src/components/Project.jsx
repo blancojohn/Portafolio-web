@@ -5,6 +5,15 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
     const data = [
         {
+            imgSrc: '/images/Battlelship.png',
+            title: 'Battle Ship',
+            tags: ['Juego', 'Lógica', 'Front-end'],
+            projectLink: 'https://github.com/blancojohn/BattlelShip-InReactJS'
+        },
+
+        /* FUTUROS PROYECTOS  */
+
+        /* {
             imgSrc: '',
             title: 'La Mascotienda',
             tags: ['API', 'MVP', 'Desarrollo'],
@@ -12,16 +21,10 @@ const Projects = () => {
         },
         {
             imgSrc: '',
-            title: 'Battle Ship',
-            tags: ['Juego', 'Lógica', 'Front-end'],
-            projectLink: 'https://github.com/blancojohn/BattlelShip-InReactJS'
-        },
-        {
-            imgSrc: '',
             title: 'Star Wars',
             tags: ['API', 'Ecommerce', 'Development'],
             projectLink: 'https://github.com/blancojohn/Ecommerce-StarWars-reading-list'
-        },
+        }, */
     ]
 
     const projects=  data.map(({imgSrc, title, tags, projectLink},
@@ -34,12 +37,12 @@ const Projects = () => {
             id="project"
             className="section"
         >
-            <div className="container">
+            <div className="Project-div-container">
                 <h2 className="headline">
                     Mis proyectos
                 </h2>
 
-                <div className="">
+                <div className="Project-div-grid-layout">
                     {projects}
                 </div>
             </div>
