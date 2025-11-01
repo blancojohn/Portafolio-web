@@ -17,13 +17,15 @@ const ProjectCard= ({
         </span>
     ))
     return (
-        <div>
-            <figure>
+        <div className="ProjectCard-div-card">
+            <figure className="ProjectCard-figure">
                 <img
                     src= {imgSrc}
+                    width={288}
+                    height={220}
                     alt= {title}
                     loading="lazy"
-                    className=""
+                    className="ProjectCard-img"
                 />
             </figure>
 

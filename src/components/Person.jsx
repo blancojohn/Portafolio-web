@@ -13,7 +13,7 @@ const Person = () => {
         >
             <div className="Person-div-container">
 
-                <div>
+                <div className="Person-div-display">
                     <div className="Person-div-intro">
                         <figure className="Person-avatar-box">
                             <img
@@ -48,8 +48,8 @@ const Person = () => {
                     <figure className="Person-figure-background">
                         <img
                             src="/images/jb-foto.png"
-                            width={500}
-                            height={500}
+                            width={500} 
+                            height={420}
                             alt="John Blanco"
                             className="Person-img"
                         />
