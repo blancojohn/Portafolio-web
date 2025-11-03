@@ -203,7 +203,7 @@ body {
   }
 }
 
-.Person-div-display {
+.Person-div-box-text-buttons {
   grid-area: 1 / 1 / 2 / 2;
   justify-self: end;
   align-self: center;
@@ -310,6 +310,52 @@ body {
   gap: 12px;
 }
 
+.ButtonPrimary {
+  height: 44px;
+  border: none;
+  border-radius: 12px; 
+  background-color: #38bdf8;
+  color: #000;
+  padding-inline: 10px;
+}
+
+.ButtonPrimary:hover {
+  background-color: #7dd3fc;
+  cursor: pointer;
+}
+
+.ButtonPrimary:active {
+  background-color: #38bdf8; 
+}
+
+.ButtonOutline {
+  height: 44px;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  font-family: system-ui;
+  font-size: 14px;
+  background-color: #27272a;;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 10px;
+}
+
+.ButtonOutline:hover {
+  background-color: #3f3f46;
+}
+
+.ButtonOutline:active {
+  background-color:  #27272a;
+}
+
+.Button-icon {
+  font-size: 18px;
+  padding-left: 5px;
+}
+
 .Person-photo-box {
   display: none;
 } 
@@ -377,53 +423,6 @@ body {
     rgba(56, 189, 248, 0.4) 25%,
     #000000ff 65%
   );
-}
-
-/* Botones del componente Person */
-.ButtonPrimary {
-  height: 44px;
-  border: none;
-  border-radius: 12px; 
-  background-color: #38bdf8;
-  color: #000;
-  padding-inline: 10px;
-}
-
-.ButtonPrimary:hover {
-  background-color: #7dd3fc;
-  cursor: pointer;
-}
-
-.ButtonPrimary:active {
-  background-color: #38bdf8; 
-}
-
-.ButtonOutline {
-  height: 44px;
-  border: none;
-  border-radius: 12px;
-  text-decoration: none;
-  font-family: system-ui;
-  font-size: 14px;
-  background-color: #27272a;;
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding-inline: 10px;
-}
-
-.ButtonOutline:hover {
-  background-color: #3f3f46;
-}
-
-.ButtonOutline:active {
-  background-color:  #27272a;
-}
-
-.Button-icon {
-  font-size: 18px;
-  padding-left: 5px;
 }
 
 /* COMPONENTE PROJECT */

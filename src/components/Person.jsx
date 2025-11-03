@@ -13,7 +13,7 @@ const Person = () => {
         >
             <div className="Person-div-container">
 
-                <div className="Person-div-display">
+                <div className="Person-div-box-text-buttons">
                     <div className="Person-div-intro">
                         <figure className="Person-avatar-box">
                             <img
