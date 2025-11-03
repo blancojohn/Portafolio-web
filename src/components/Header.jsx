@@ -18,9 +18,9 @@ const Header = () => {
                             />
                         </a>
                     </h1>
-                    <div className="Header-div-box-menu-hamburguesa">
+                    <div className="Header-div-box">
                         <button
-                            className="Header-menu-hamburguesa"
+                            className="Header-button-menu-hamburguesa"
                             onClick={() => setNavOpen((prev) => !prev)}
                         >
                             {
@@ -40,7 +40,7 @@ const Header = () => {
                     </div>
                     <a
                         href="#contactame"
-                        className="Header-link-contactame--visibility"
+                        className="Header-button-link-contactame--visibility"
                     >Contáctame
                     </a>
                 </div>

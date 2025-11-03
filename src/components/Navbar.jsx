@@ -48,7 +48,7 @@ const Navbar = ({ navOpen }) => {
         {
             label: 'Contáctame',
             link: '#contactame',
-            className: 'Navbar-contactame--visibility'
+            className: 'Navbar-link-contactame--visibility'
         }
     ];
 
@@ -71,7 +71,7 @@ const Navbar = ({ navOpen }) => {
                     itemsNavbar
                 }
                 <div
-                    className="Navbar-active-box"
+                    className="Navbar-div-box-white--active"
                     ref={activeBox}
                 ></div>
             </nav>
