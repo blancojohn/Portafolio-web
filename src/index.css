@@ -7,9 +7,7 @@ body {
 /* COMPONENTE HEADER Y NAVBAR */
 
 .Header-header-container {
-  grid-area: header;
   display: flex;
-  justify-content: center;
   align-items: center;
   position: fixed;
   width: 99%;
@@ -17,14 +15,13 @@ body {
 }
 
 .Header-div {
-  grid-area: header;
   display: flex;
   width: 99%;
   justify-content: space-between;
   align-items: center;
 }
 
-.Header-div-display-botton {
+.Header-div-box-menu-hamburguesa {
   display: flex;
   position: relative;
   justify-content: end;
@@ -37,7 +34,7 @@ body {
   color: #fff; 
   border-radius: 6px;
   border-width: 0px;
-  display: flex; /* Está condicionada con la querie de abajo para mostrar btn-menú según ancho de la pantalla */
+  display: flex; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -46,7 +43,7 @@ body {
   visibility: hidden;
 }
 
-.Header-menu-hamburguesa span { /* Crea menú hamburguesa */
+.Header-menu-hamburguesa span { 
   display: block;
   width: 20px;            
   height: 1.5px;           
@@ -62,7 +59,7 @@ body {
   background-color: #383737ff; 
 }
 
-.Header-contactame--visibility {
+.Header-link-contactame--visibility {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +71,7 @@ body {
   text-decoration: none;
 }
 
-.Header-contactame--visibility:active {
+.Header-link-contactame--visibility:active {
   background: #c7c7c7ff;
 }
 
@@ -119,7 +116,7 @@ body {
   .Header-menu-hamburguesa {
     visibility: visible;
   }
-  .Header-contactame--visibility {
+  .Header-link-contactame--visibility {
     display: none;
   }
   .Navbar-contactame--visibility {
