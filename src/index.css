@@ -152,11 +152,12 @@ body {
   padding-right: 16px; 
 }
 
-.Person-div-display {
-  grid-area: 1 / 1 / 2 / 2;
-  justify-self: end;
+@media (min-width: 1280px) {
+  .Person-div-container {
+    max-width: 1152px;
+  }
 }
-  
+
 @media (min-width: 1024px){
   .Person-section {
     padding-top: 150px;
@@ -171,12 +172,11 @@ body {
   }
 }
 
-@media (min-width: 1280px) {
-  .Person-div-container {
-    max-width: 1152px;
-  }
+.Person-div-display {
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: end;
 }
-
+  
 .Person-div-intro {
   display: flex;
   align-items: center;
@@ -266,6 +266,19 @@ body {
   display: none;
 }
 
+@media (min-width: 1024px){
+  .Person-photo-box {
+    display: block;
+    grid-area: 1 / 2 / 2 / 3;
+    justify-self: center;
+    width: 350px;
+  }
+
+  .Person-img {
+    width: 100%;
+  }
+}
+
 .Person-figure-background {
   width: 100%;
   border-radius: 60px;
@@ -288,20 +301,6 @@ body {
     #000000ff 65%
   );
 }
-
-@media (min-width: 1024px){
-  .Person-photo-box {
-    display: block;
-    grid-area: 1 / 2 / 2 / 3;
-    justify-self: center;
-    width: 350px;
-  }
-
-  .Person-img {
-    width: 100%;
-  }
-}
-
 
 /* Botones del componente Person */
 .ButtonPrimary {

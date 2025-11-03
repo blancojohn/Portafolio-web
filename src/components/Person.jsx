@@ -48,7 +48,6 @@ const Person = () => {
                     <figure className="Person-figure-background">
                         <img
                             src="/images/jb-foto.png"
-                            width={500} 
                             height={420}
                             alt="John Blanco"
                             className="Person-img"
