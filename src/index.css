@@ -143,25 +143,28 @@ body {
   padding-top: 75px;
 }
 
+@media (min-width: 1280px){
+  .Person-section {
+    padding-top: 160px;
+  } 
+}
+
+@media (min-width: 1024px) and (max-width: 1279px){
+  .Person-section {
+    padding-top: 140px;
+  }
+}
+
 .Person-div-container {
+  display: grid;
   width: 100%;
-  align-items: center;
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px; 
 }
 
-@media (min-width: 1280px) {
-  .Person-div-container {
-    max-width: 1152px;
-  }
-}
-
-@media (min-width: 1024px){
-  .Person-section {
-    padding-top: 150px;
-  } 
+@media (min-width: 1280px){
   .Person-div-container {
     max-width: 1000px;
     display: grid;
@@ -172,9 +175,28 @@ body {
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1279){
+  .Person-div-container {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding-left: 32px;
+    padding-right:32px;
+    gap: 30px;
+  }
+}
+
 .Person-div-display {
   grid-area: 1 / 1 / 2 / 2;
   justify-self: end;
+  align-self: center;
+}
+
+@media (max-width: 800px) {
+  .Person-div-display {
+    justify-self: start;
+    margin-left: 25px;  
+  }
 }
   
 .Person-div-intro {
@@ -229,10 +251,10 @@ body {
 }
 
 .Person-h2-headline {
-  max-width: 15ch;     
-  margin-top: 20px;
+  max-width: 16ch;     
+  margin-top: 3px;
   margin-bottom: 32px;
-  font-size: 48px;          
+  font-size: 25px;          
   line-height: 1.25;        
   font-weight: 600;         
 
@@ -241,17 +263,26 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 800px) {
   .Person-h2-headline {
     max-width: 20ch;  
   }
-} 
+}
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1279px){
   .Person-h2-headline {
-    max-width: 16ch;   
+    max-width: 15ch;   
+    margin-bottom: 30px;
+    font-size: 42px;
+    line-height: 1.15;
+  }
+}
+
+@media (min-width: 1280px) {
+  .Person-h2-headline {
+    max-width: 13ch;   
     margin-bottom: 40px;
-    font-size: 55px;
+    font-size: 50px;
     line-height: 1.15;
   }
 }
@@ -264,14 +295,27 @@ body {
 
 .Person-photo-box {
   display: none;
-}
+} 
 
-@media (min-width: 1024px){
+@media (min-width: 1280px) {
   .Person-photo-box {
     display: block;
     grid-area: 1 / 2 / 2 / 3;
-    justify-self: center;
+    justify-self: start;
     width: 350px;
+  }
+
+  .Person-img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px){
+  .Person-photo-box {
+    display: block;
+    grid-area: 1 / 2 / 2 / 3;
+    justify-self: start;
+    width: 300px;
   }
 
   .Person-img {
