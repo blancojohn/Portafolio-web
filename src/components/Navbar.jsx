@@ -66,7 +66,7 @@ const Navbar = ({ navOpen }) => {
 
     return (
         <>
-            <nav className={"Navbar-nav--visibility " + (navOpen ? "active" : "")}>
+            <nav className={"Navbar-nav " + (navOpen ? "menu-hamburguese" : "")}>
                 {
                     itemsNavbar
                 }
