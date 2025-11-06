@@ -506,22 +506,22 @@ body {
 
 /* COMPONENTE PROJECT */
 .Project-div-container {
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+  width: 280px;
+  padding-top: 40px;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media (min-width: 640px) {
   .Project-div-container {
-    max-width: 615px;
+    width: 615px;
   }
 }
 
  @media (min-width: 1024px) {
   .Project-div-container {
-    max-width: 900px;
+    width: 900px;
+    padding-top: 70px;
   }
 }
 
