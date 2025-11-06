@@ -1,16 +1,16 @@
+import { LuArrowUpRight } from "react-icons/lu"
 
 
-
-const ProjectCard= ({
+const ProjectCard = ({
     imgSrc,
     title,
     tags,
     projetLink
-})=> {
+}) => {
 
-    const data= tags.map((label, key)=>(
+    const data = tags.map((label, key) => (
         <span
-            key= {key}
+            key={key}
             className=""
         >
             {label}
@@ -20,37 +20,40 @@ const ProjectCard= ({
         <div className="ProjectCard-div-card">
             <figure className="ProjectCard-figure">
                 <img
-                    src= {imgSrc}
-                    width={288}
-                    height={220}
-                    alt= {title}
+                    src={imgSrc}
+                    height={180}
+                    alt={title}
                     loading="lazy"
                     className="ProjectCard-img"
                 />
             </figure>
 
-            <div>
-                <h3 className="">
-                    {title}
-                </h3>
+            <div className="ProjectCard-div-box">
+                <div>
+                    <h3 className="ProjectCard-h3">
+                        {title}
+                    </h3>
 
-                <div className="">
-                    {data}
+                    <div className="">
+                        {data}
+                    </div>
                 </div>
 
                 <div className="">
+
+
                     <span
                         className=""
                         aria-hidden=""
                     >
-                        arrow_outward
+                        <LuArrowUpRight />
                     </span>
                 </div>
             </div>
 
             <a
                 href={projetLink}
-                target= "_blank"
+                target="_blank"
                 className=""
             >
 
