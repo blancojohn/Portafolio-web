@@ -575,7 +575,7 @@ body {
   font-size: 22px;
 }
 
-.ProjectCard-div-box-data {
+.ProjectCard-div-box-development {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -607,6 +607,32 @@ body {
 
 .ProjectCard-span-arrow {
   font-size: 25px;
+}
+
+.ProjectCard-div-box-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.ProjectCard-figure-technologie {
+  display: inline-grid;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #fafafa0d;
+  margin-block-start: 16px;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+}
+
+.ProjectCard-anchor-github {
+  position: absolute;
+  inset: 0;
 }
 
 

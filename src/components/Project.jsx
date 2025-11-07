@@ -7,9 +7,9 @@ const Projects = () => {
         {
             imgSrc: '/images/Battlelship.png',
             title: 'Battle Ship',
-            development: ['Juego', 'Lógica', 'Front-end'],
+            development: ['Algoritmia', 'Lógica', 'Diseño'],
             projectLink: 'https://github.com/blancojohn/BattlelShip-InReactJS',
-            technologies: ['/images/css3.svg', '/images/javascript.svg', '/images/react.svg'] 
+            technologies: ['/images/css3.svg', '/images/javascript.svg', '/images/react.svg', '/images/bootstrap.svg', '/images/git.svg'] 
         },
 
         /* FUTUROS PROYECTOS  */

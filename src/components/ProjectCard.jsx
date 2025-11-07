@@ -9,7 +9,7 @@ const ProjectCard = ({
     technologies
 }) => {
 
-    const dataDevelopment= development.map((label, key) => (
+    const dataDevelopment = development.map((label, key) => (
         <span
             key={key}
             className="ProjectCard-div-data"
@@ -18,11 +18,16 @@ const ProjectCard = ({
         </span>
     ))
 
-    const dataTechnologies= technologies.map((icon, key) =>(
-        <img
-            key={key}
-            src={icon}
-        />        
+    const dataTechnologies = technologies.map((icon, key) => (
+        <figure className="ProjectCard-figure-technologie">
+            <img
+                key={key}
+                src={icon}
+                width={35}
+                height={35}
+            />
+        </figure>
+
     ))
     console.log(dataTechnologies)
 
@@ -44,7 +49,7 @@ const ProjectCard = ({
                         {title}
                     </h3>
 
-                    <div className="ProjectCard-div-box-data">
+                    <div className="ProjectCard-div-box-development">
                         {dataDevelopment}
                     </div>
                 </div>
@@ -61,11 +66,13 @@ const ProjectCard = ({
             <a
                 href={projetLink}
                 target="_blank"
-                className=""
+                className="ProjectCard-anchor-github"
             >
-
             </a>
-           {dataTechnologies}
+
+            <div className="ProjectCard-div-box-technologies">
+                {dataTechnologies}
+            </div>
         </div>
     )
 }
