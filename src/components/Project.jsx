@@ -25,18 +25,7 @@ const Projects = () => {
             tags: ['API', 'Ecommerce', 'Development'],
             projectLink: 'https://github.com/blancojohn/Ecommerce-StarWars-reading-list'
         },
-        {
-            imgSrc: '/images/Battlelship.png',
-            title: 'Star Wars',
-            tags: ['API', 'Ecommerce', 'Development'],
-            projectLink: 'https://github.com/blancojohn/Ecommerce-StarWars-reading-list'
-        },
-        {
-            imgSrc: '/images/Battlelship.png',
-            title: 'Star Wars',
-            tags: ['API', 'Ecommerce', 'Development'],
-            projectLink: 'https://github.com/blancojohn/Ecommerce-StarWars-reading-list'
-        },
+       
     ]
 
     const projects=  data.map(({imgSrc, title, tags, projectLink},

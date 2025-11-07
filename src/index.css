@@ -575,6 +575,26 @@ body {
   font-size: 22px;
 }
 
+.ProjectCard-div-box-data {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.ProjectCard-div-data {
+  display: inline-grid;
+  align-items: center;
+  height: 32px;
+  padding-inline: 6px;
+  gap: 2px;
+  border-radius: 8px;
+  background-color: #FAFAFA0D;
+  font-size: 0.875rem; 
+  line-height: 1.25rem; 
+  color: #a1a1aa; 
+}
+
 
 
 

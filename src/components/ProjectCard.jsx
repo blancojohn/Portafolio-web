@@ -11,7 +11,7 @@ const ProjectCard = ({
     const data = tags.map((label, key) => (
         <span
             key={key}
-            className=""
+            className="ProjectCard-div-data"
         >
             {label}
         </span>
@@ -34,7 +34,7 @@ const ProjectCard = ({
                         {title}
                     </h3>
 
-                    <div className="">
+                    <div className="ProjectCard-div-box-data">
                         {data}
                     </div>
                 </div>
