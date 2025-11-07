@@ -506,7 +506,7 @@ body {
 
 /* COMPONENTE PROJECT */
 .Project-div-container {
-  width: 280px;
+  width: 310px;
   padding-top: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -514,26 +514,26 @@ body {
 
 @media (min-width: 640px) {
   .Project-div-container {
-    width: 615px;
+    width: 650px;
   }
 }
 
  @media (min-width: 1024px) {
   .Project-div-container {
-    width: 900px;
+    width: 990px;
     padding-top: 70px;
   }
 }
 
 .Project-div-grid-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 280px);
+  grid-template-columns: repeat(auto-fill, 310px); /* Ancho de la columna es el ancho de la card */
   place-content: center;
   gap: 30px;
 }
 
 .ProjectCard-div-card {
-  height: 350px;
+  height: 380px;
   position: relative;
   padding: 10px;
   border-radius: 16px;
@@ -595,6 +595,19 @@ body {
   color: #a1a1aa; 
 }
 
+.ProjectCard-div-box-arrow {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background-color: #38BDF8;
+  color: #09090B;
+}
+
+.ProjectCard-span-arrow {
+  font-size: 25px;
+}
 
 
 

@@ -8,29 +8,39 @@ const Projects = () => {
             imgSrc: '/images/Battlelship.png',
             title: 'Battle Ship',
             tags: ['Juego', 'Lógica', 'Front-end'],
-            projectLink: 'https://github.com/blancojohn/BattlelShip-InReactJS'
+            projectLink: 'https://github.com/blancojohn/BattlelShip-InReactJS',
+            technologies: ['/images/css3.svg', 'javascript.svg', 'react.svg'] 
         },
 
         /* FUTUROS PROYECTOS  */
 
-        {
+         {
             imgSrc: '/images/Battlelship.png',
             title: 'La Mascotienda',
             tags: ['API', 'MVP', 'Desarrollo'],
-            projectLink: 'https://github.com/The-Nick-J/Final-Project'
+            projectLink: 'https://github.com/The-Nick-J/Final-Project',
+            technologies: []
         },
         {
             imgSrc: '/images/Battlelship.png',
             title: 'Star Wars',
             tags: ['API', 'Ecommerce', 'Development'],
-            projectLink: 'https://github.com/blancojohn/Ecommerce-StarWars-reading-list'
-        },
+            projectLink: 'https://github.com/blancojohn/Ecommerce-StarWars-reading-list',
+            technologies: []
+        }, 
        
     ]
 
-    const projects=  data.map(({imgSrc, title, tags, projectLink},
+    const projects=  data.map(({imgSrc, title, tags, projectLink, technologies},
                         key) => (
-                            <ProjectCard key={key} imgSrc={imgSrc} title={title} tags={tags} projetLink={projectLink}/>
+                            <ProjectCard 
+                                key={key} 
+                                imgSrc={imgSrc} 
+                                title={title} 
+                                tags={tags} 
+                                projetLink={projectLink}
+                                technologies={technologies}
+                            />
                         ))
 
     return (

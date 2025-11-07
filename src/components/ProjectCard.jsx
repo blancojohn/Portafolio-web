@@ -5,7 +5,8 @@ const ProjectCard = ({
     imgSrc,
     title,
     tags,
-    projetLink
+    projetLink,
+    technologies
 }) => {
 
     const data = tags.map((label, key) => (
@@ -16,12 +17,22 @@ const ProjectCard = ({
             {label}
         </span>
     ))
+
+    const dataTechnologies= technologies.map((icon, key) =>(
+        <span
+            key={key}
+        >
+            {icon}
+        </span>
+    ))
+    console.log(dataTechnologies)
+
     return (
         <div className="ProjectCard-div-card">
             <figure className="ProjectCard-figure">
                 <img
                     src={imgSrc}
-                    height={180}
+                    height={200}
                     alt={title}
                     loading="lazy"
                     className="ProjectCard-img"
@@ -39,12 +50,9 @@ const ProjectCard = ({
                     </div>
                 </div>
 
-                <div className="">
-
-
+                <div className="ProjectCard-div-box-arrow">
                     <span
-                        className=""
-                        aria-hidden=""
+                        className="ProjectCard-span-arrow"
                     >
                         <LuArrowUpRight />
                     </span>
@@ -58,6 +66,7 @@ const ProjectCard = ({
             >
 
             </a>
+            {technologies}
         </div>
     )
 }
