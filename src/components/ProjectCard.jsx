@@ -4,12 +4,12 @@ import { LuArrowUpRight } from "react-icons/lu"
 const ProjectCard = ({
     imgSrc,
     title,
-    tags,
+    development,
     projetLink,
     technologies
 }) => {
 
-    const data = tags.map((label, key) => (
+    const dataDevelopment= development.map((label, key) => (
         <span
             key={key}
             className="ProjectCard-div-data"
@@ -19,11 +19,10 @@ const ProjectCard = ({
     ))
 
     const dataTechnologies= technologies.map((icon, key) =>(
-        <span
+        <img
             key={key}
-        >
-            {icon}
-        </span>
+            src={icon}
+        />        
     ))
     console.log(dataTechnologies)
 
@@ -46,7 +45,7 @@ const ProjectCard = ({
                     </h3>
 
                     <div className="ProjectCard-div-box-data">
-                        {data}
+                        {dataDevelopment}
                     </div>
                 </div>
 
@@ -66,7 +65,7 @@ const ProjectCard = ({
             >
 
             </a>
-            {technologies}
+           {dataTechnologies}
         </div>
     )
 }

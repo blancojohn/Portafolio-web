@@ -3,13 +3,13 @@ import ProjectCard from "./ProjectCard";
 
 
 const Projects = () => {
-    const data = [
+    const dataCard = [
         {
             imgSrc: '/images/Battlelship.png',
             title: 'Battle Ship',
-            tags: ['Juego', 'Lógica', 'Front-end'],
+            development: ['Juego', 'Lógica', 'Front-end'],
             projectLink: 'https://github.com/blancojohn/BattlelShip-InReactJS',
-            technologies: ['/images/css3.svg', 'javascript.svg', 'react.svg'] 
+            technologies: ['/images/css3.svg', '/images/javascript.svg', '/images/react.svg'] 
         },
 
         /* FUTUROS PROYECTOS  */
@@ -17,27 +17,27 @@ const Projects = () => {
          {
             imgSrc: '/images/Battlelship.png',
             title: 'La Mascotienda',
-            tags: ['API', 'MVP', 'Desarrollo'],
+            development: ['API', 'MVP', 'Desarrollo'],
             projectLink: 'https://github.com/The-Nick-J/Final-Project',
             technologies: []
         },
         {
             imgSrc: '/images/Battlelship.png',
             title: 'Star Wars',
-            tags: ['API', 'Ecommerce', 'Development'],
+            development: ['API', 'Ecommerce', 'Development'],
             projectLink: 'https://github.com/blancojohn/Ecommerce-StarWars-reading-list',
             technologies: []
         }, 
        
     ]
 
-    const projects=  data.map(({imgSrc, title, tags, projectLink, technologies},
+    const projects=  dataCard.map(({imgSrc, title, development, projectLink, technologies},
                         key) => (
                             <ProjectCard 
                                 key={key} 
                                 imgSrc={imgSrc} 
                                 title={title} 
-                                tags={tags} 
+                                development={development} 
                                 projetLink={projectLink}
                                 technologies={technologies}
                             />
