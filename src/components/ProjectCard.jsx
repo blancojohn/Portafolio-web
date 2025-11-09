@@ -19,9 +19,10 @@ const ProjectCard = ({
     ))
 
     const dataTechnologies = technologies.map((icon, key) => (
-        <figure className="ProjectCard-figure-technologie">
+        <figure 
+            key={key}
+            className="ProjectCard-figure-technologie">
             <img
-                key={key}
                 src={icon}
                 width={35}
                 height={35}

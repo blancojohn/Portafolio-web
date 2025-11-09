@@ -635,6 +635,73 @@ body {
   inset: 0;
 }
 
+/* COMPONENT CONTACT */
+.Contact-section {
+
+}
+
+.Contact-div-container {
+  width: 310px;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1024px) {
+  .Contact-div-container {
+    width: 990px;
+    display: grid;
+    grid-template-columns: repeat(2, 495px);
+    align-items: stretch;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .Contact-div-container {
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    align-items: stretch;
+  }
+}
+
+.Contact-div-h2-text-icons {
+  margin-bottom: 12px;
+}
+
+@media (min-width: 1024px) {
+  .Contact-div-h2-text-icons {
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.Contact-h2-headLine {
+  margin-block-start: unset;
+}
+
+@media (min-width: 1024px){
+  .Contact-h2-headLine {
+    max-width: 12ch;
+  }
+}
+
+.Contact-p-text {
+  color: #a1a1aa;
+  max-width: 50ch;
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 1024px) {
+  .Contact-p-text {
+    max-width: 30ch;
+  }
+}
+
+
+
 
 
 
