@@ -20,12 +20,12 @@ const Contact = () => {
         },
     ];
 
-    const socialLinks = dataSocialLinks.map(({ herf, icon }, key) => (
+    const socialLinks = dataSocialLinks.map(({ href, icon }, key) => (
         <a
             key={key}
-            href={herf}
+            href={href}
             target="_blank"
-            className=""
+            className="Contact-anchor-socialLinks"
         >
             {icon}
         </a>
@@ -45,26 +45,26 @@ const Contact = () => {
                         </h2>
 
                         <p className="Contact-p-text">
-                            Contáctame para una entrevista y hablemos como las 
-                            necesidades de tu empresa se ajustan a mi perfil
+                            Agendemos una entrevista y hablemos de las necesidades de tu empresa 
+                            para ver como mi perfil te puede ayudar
                         </p>
 
-                        <div className="">
+                        <div className="Contact-div-socialLinks">
                             {socialLinks}
                         </div>
                     </div>
 
                     <form
                         action=""
-                        method=""
-                        className=""
+                        method="POST"
+                        className="Contact-form"
                     >
-                        <div className="">
+                        <div className="Contact-div-box">
 
-                            <div className="">
+                            <div className="Contact-div-name">
                                 <label
                                     htmlFor="name"
-                                    className="label"
+                                    className="Contact-label"
                                 >
                                     Nombre
                                 </label>
@@ -74,15 +74,15 @@ const Contact = () => {
                                     id="name"
                                     autoComplete="name"
                                     required
-                                    placeholder="name"
-                                    className="text-field"
+                                    placeholder="nombre"
+                                    className="Contact-text-field"
                                 />
                             </div>
 
                             <div className="">
                                 <label
                                     htmlFor="email"
-                                    className="label"
+                                    className="Contact-label"
                                 >
                                     Correo
                                 </label>
@@ -93,34 +93,33 @@ const Contact = () => {
                                     autoComplete="email"
                                     required
                                     placeholder="correo"
-                                    className="text-field"
+                                    className="Contact-text-field"
                                 />
                             </div>
 
-                            <div className="">
-                                <label
-                                    htmlFor="message"
-                                    className="label"
-                                >
-                                    Mensaje
-                                </label>
-                                <textarea
-                                    name="message"
-                                    id="message"
-                                    placeholder="Agendemos una entrevista"
-                                    required
-                                    className="text-field"
-                                ></textarea>
-                            </div>
-
-                            <button
-                                type="submit"
-                                className=""
-                            >
-                                Submit
-                            </button>
-
                         </div>
+                        <div className="Contact-div-text-tarea">
+                            <label
+                                htmlFor="message"
+                                className="Contact-label"
+                            >
+                                Mensaje
+                            </label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                placeholder="Agendemos una entrevista"
+                                required
+                                className="Contact-text-field"
+                            ></textarea>
+                        </div>
+
+                        <button
+                            type="submit"
+                            className="Contact-button-submit"
+                        >
+                            Enviar
+                        </button>
                     </form>
 
                 </div>

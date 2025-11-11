@@ -637,7 +637,7 @@ body {
 
 /* COMPONENT CONTACT */
 .Contact-section {
-
+  margin-top: 80px;
 }
 
 .Contact-div-container {
@@ -666,7 +666,7 @@ body {
 }
 
 .Contact-div-h2-text-icons {
-  margin-bottom: 12px;
+  margin-bottom: 48px;
 }
 
 @media (min-width: 1024px) {
@@ -683,7 +683,7 @@ body {
 
 @media (min-width: 1024px){
   .Contact-h2-headLine {
-    max-width: 12ch;
+    max-width: 25ch;
   }
 }
 
@@ -697,8 +697,117 @@ body {
 @media (min-width: 1024px) {
   .Contact-p-text {
     max-width: 30ch;
+    margin-top: 10px;
   }
 }
+
+.Contact-div-socialLinks {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  gap: 8px;
+}
+
+.Contact-anchor-socialLinks {
+  color: #fff;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height:48px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 2px #FAFAFA;
+}
+
+.Contact-anchor-socialLinks:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (min-width: 1024px) {
+  .Contact-form {
+    padding-left: 10px;
+  }
+}
+
+.Contact-div-box {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .Contact-div-box {
+    display: grid;
+    grid-template-columns: repeat(2, 208px);
+    gap: 40px;
+}
+}
+
+.Contact-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #a1a1aa;
+  font-size: 14px;
+}
+
+.Contact-text-field {
+  width: 100%;
+  background-color: #27272A;
+  color: #fff;
+  padding: 12px;
+  outline: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.Contact-div-text-tarea {
+  width: 310px;
+  margin-top:12px;
+  font-family: sans-serif;
+}
+
+@media (min-width: 1024px) {
+  .Contact-div-text-tarea {
+    width: 458px;
+  }
+}
+
+textarea {
+  height: 100px;
+  font-family: sans-serif;
+}
+
+.Contact-button-submit {
+  width: 336px;
+  height: 42px;
+  margin-top: 10px;
+  background-color: #38BDF8;
+  border-radius: 8px;
+  border-width: 0px;
+  font-family: sans-serif;
+}
+
+.Contact-button-submit:hover {
+  background-color: #7dd3fc;
+  cursor: pointer;
+}
+
+.Contact-button-submit:active {
+  background-color: #38bdf8; 
+}
+
+@media (min-width: 1024px) {
+  .Contact-button-submit {
+    width: 485px;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 
