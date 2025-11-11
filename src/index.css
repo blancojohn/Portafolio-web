@@ -512,6 +512,12 @@ body {
   margin-right: auto;
 }
 
+.Project-h2-headline {
+  background: -webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media (min-width: 640px) {
   .Project-div-container {
     width: 650px;
@@ -679,6 +685,9 @@ body {
 
 .Contact-h2-headLine {
   margin-block-start: unset;
+  background: -webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (min-width: 1024px){

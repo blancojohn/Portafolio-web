@@ -55,7 +55,7 @@ const Contact = () => {
                     </div>
 
                     <form
-                        action=""
+                        action="https://getform.io/f/bzygmrxa"
                         method="POST"
                         className="Contact-form"
                     >

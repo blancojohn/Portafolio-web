@@ -9,7 +9,7 @@ const Projects = () => {
             title: 'Battle Ship',
             development: ['Algoritmia', 'Lógica', 'Diseño'],
             projectLink: 'https://github.com/blancojohn/BattlelShip-InReactJS',
-            technologies: ['/images/css3.svg', '/images/javascript.svg', '/images/react.svg', '/images/bootstrap.svg', '/images/git.svg'] 
+            technologies: ['/images/javascript.svg', '/images/react.svg', '/images/css3.svg', '/images/bootstrap.svg', '/images/git.svg'] 
         },
 
         /* FUTUROS PROYECTOS  */
@@ -49,7 +49,7 @@ const Projects = () => {
             className="section"
         >
             <div className="Project-div-container">
-                <h2 className="headline">
+                <h2 className="Project-h2-headline">
                     Mis proyectos
                 </h2>
 
