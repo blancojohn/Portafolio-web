@@ -8,7 +8,7 @@ const Person = () => {
 
     return (
         <section
-            id="home"
+            id="bienvenido"
             className="Person-section"
         >
             <div className="Person-div-container">
