@@ -13,6 +13,7 @@ const ButtonPrimary = ({
                 href={href}
                 target={target}
                 className={"ButtonPrimary"}
+                id="ButtonPrimary"
             >
                 {label}
                 {icon ?

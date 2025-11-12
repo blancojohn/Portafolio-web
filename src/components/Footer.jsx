@@ -20,17 +20,6 @@ const dataSiteMap = [
     }
 ];
 
-const siteMap = dataSiteMap.map(({ label, href }, key) => (
-    <li key={key}>
-        <a
-            href={href}
-            className=""
-        >
-            {label}
-        </a>
-    </li>
-));
-
 const dataSocials = [
     {
         label: 'GitHub',
@@ -42,11 +31,33 @@ const dataSocials = [
     },
 ];
 
+const dataInspiration = [
+    {
+        label: 'Github codewithsadee',
+        href: 'https://www.github.com/codewithsadee-org',
+    },
+    {
+        label: 'LinkedIn codewithsadee',
+        href: 'https://www.linkedin.com/in/codewithsadee'
+    }
+];
+
+const siteMap = dataSiteMap.map(({ label, href }, key) => (
+    <li key={key}>
+        <a
+            href={href}
+            className="Footer-anchor-sitemap-socials"
+        >
+            {label}
+        </a>
+    </li>
+));
+
 const socials = dataSocials.map(({ label, href }, key) => (
     <li key={key}>
         <a
             href={href}
-            className=""
+            className="Footer-anchor-sitemap-socials"
             target="_blank"
         >
             {label}
@@ -54,18 +65,29 @@ const socials = dataSocials.map(({ label, href }, key) => (
     </li>
 ))
 
+const inspiration = dataInspiration.map(({ label, href }, key) => (
+        <a
+            key={key}
+            href={href}
+            className="Footer-anchor-inspiration"
+            target="_blank"
+        >
+            {label}
+        </a>
+))
+
 
 
 const Footer = () => {
     return (
-        <footer className="">
+        <footer className="Footer-footer">
             <div className="Footer-div-container">
 
-                <div className="">
+                <div className="Footer-div-box">
 
-                    <div className="">
+                    <div className="Footer-div-content-h2-ButtonPrimary">
                         <h2 className="Footer-h2">
-                            Trabajemos juntos hoy
+                            Comencemos a trabajar juntos
                         </h2>
 
                         <ButtonPrimary
@@ -75,17 +97,17 @@ const Footer = () => {
                         />
                     </div>
 
-                    <div className="">
+                    <div className="Footer-div-content-sitemap-socials">
                         <div>
-                            <p className="">Ir a:</p>
-                            <ul>
+                            <p>Ir a:</p>
+                            <ul className="Footer-ul-sitemap-socials">
                                 {siteMap}
                             </ul>
                         </div>
 
                         <div>
-                            <p className="">Medios sociales:</p>
-                            <ul>
+                            <p>Medios sociales:</p>
+                            <ul className="Footer-ul-sitemap-socials">
                                 {socials}
                             </ul>
                         </div>
@@ -93,10 +115,9 @@ const Footer = () => {
 
                 </div>
 
-                <div className="">
+                <div className="Footer-div-box-logo-text">
                     <a
-                        href=""
-                        className=""
+                        href="#bienvenido"
                     >
                         <img
                             src="/images/logo.svg"
@@ -105,9 +126,14 @@ const Footer = () => {
                             alt="Logo"
                         />
                     </a>
-                    <p className="">
-                        Me inspiré de codewithsadee para la construcción de mi portafolio
-                    </p>
+                    <div>
+                        <p className="Footer-p-inspiration">
+                            La inspiración para la creación de este portafolio vino de codewithsadee:
+                        </p>
+                        <div className="Footer-div-inspiration">
+                            {inspiration}
+                        </div>
+                    </div>
                 </div>
 
             </div>

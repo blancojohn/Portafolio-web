@@ -390,12 +390,16 @@ body {
 }
 
 .ButtonPrimary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 44px;
   border: none;
   border-radius: 12px; 
   background-color: #38bdf8;
   color: #000;
   padding-inline: 10px;
+  text-decoration: none;
 }
 
 .ButtonPrimary:hover {
@@ -808,6 +812,118 @@ textarea {
   .Contact-button-submit {
     width: 485px;
   }
+}
+
+/* COMPONENTE FOOTER */
+.Footer-footer {
+  margin-top: 100px;
+}
+
+.Footer-div-container {
+  width: 310px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1024px) {
+  .Footer-div-container {
+    width: 990px;
+  }
+}
+
+@media (min-width: 640px) and (max-width:1023px) {
+  .Footer-div-container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Footer-div-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 495px);
+  }
+}
+
+@media (min-width: 640px) and (max-width:1023px) {
+  .Footer-div-box {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
+.Footer-div-content-h2-ButtonPrimary {
+  margin-bottom: 40px;
+}
+
+.Footer-h2 {
+  margin-bottom: 32px;
+  background: -webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 1024px) {
+  .Footer-h2 {
+    max-width: 14ch;
+  }
+}
+
+#ButtonPrimary {
+  width: 200px;
+}
+
+.Footer-div-content-sitemap-socials {
+  display: grid;
+  grid-template-columns: repeat(2, 155px);
+  gap: 16px;
+}
+
+@media(min-width: 1024px) {
+  .Footer-div-content-sitemap-socials {
+    padding-left: 10px;
+  }
+}
+
+.Footer-anchor-sitemap-socials {
+  padding-block: 4px;
+  text-decoration: none;
+  color: #474748ff;
+  display: block;
+  font-size: 14px;
+}
+
+.Footer-ul-sitemap-socials {
+  padding-inline-start: 0px;
+  list-style: none;
+}
+
+.Footer-anchor-sitemap-socials:hover {
+  color: #fff;
+}
+
+.Footer-div-box-logo-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  margin-bottom: 32px;
+}
+
+.Footer-div-inspiration {
+  display: flex;
+  flex-direction: column;
+}
+
+.Footer-anchor-inspiration {
+  padding-block: 4px;
+  text-decoration: none;
+  color: #474748ff;
+  font-size: 14px;
+}
+
+.Footer-anchor-inspiration:hover {
+  color: #fff;
 }
 
 
