@@ -30,7 +30,6 @@ const ProjectCard = ({
         </figure>
 
     ))
-    console.log(dataTechnologies)
 
     return (
         <div className="ProjectCard-div-card">
