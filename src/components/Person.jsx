@@ -38,7 +38,7 @@ const Person = () => {
                     </h2>
 
                     <div className="Person-buttons-box">
-                        <ButtonPrimary label={"Download CV"} icon={iconDownload}/>
+                        <ButtonPrimary label={"Download CV"} icon={iconDownload} href={""}/>
 
                         <ButtonOutline label={"Scroll down"} icon={iconScrollDown} href={"#sobre-mi"}/>
                     </div>
