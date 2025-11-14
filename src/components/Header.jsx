@@ -11,7 +11,7 @@ const Header = () => {
                     <h1>
                         <a href="#bienvenido">
                             <img
-                                src="dist/images/logo.svg"
+                                src="/dist/images/logo.svg"
                                 width={70}
                                 height={70}
                                 alt="Logo"
