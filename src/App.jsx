@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Person from "./components/Person";
 import Project from "./components/Project";
-import AboutMe from "./components/Aboutme";
+import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer"; 
 
