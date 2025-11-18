@@ -1,8 +1,8 @@
 import { ButtonOutline, ButtonPrimary } from "./Button"
 import { LuDownload } from "react-icons/lu";
 import { LuArrowDown } from "react-icons/lu";
-import avatar from "/src/assets/images/avatar-1.jpg";
-import jb from "/src/assets/images/jb-foto.png";
+import avatar from "../assets/images/avatar-1.jpg";
+import jb from "../assets/images/jb-foto.png";
 
 const Person = () => {
     let iconDownload= <LuDownload />;

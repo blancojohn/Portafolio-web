@@ -1,6 +1,6 @@
 import { ButtonPrimary } from "./Button";
 import { LuArrowRight } from "react-icons/lu";
-import logo from "/src/assets/images/logo.svg";
+import logo from "../assets/images/logo.svg";
 
 
 const dataSiteMap = [
