@@ -21,14 +21,13 @@ const Projects = () => {
             projectLink: 'https://github.com/The-Nick-J/Final-Project',
             technologies: []
         },
-        {
+      /*   {
             imgSrc: '/images/Battlelship.png',
             title: 'Star Wars',
             development: ['API', 'Ecommerce', 'Development'],
             projectLink: 'https://github.com/blancojohn/Ecommerce-StarWars-reading-list',
             technologies: []
-        }, 
-       
+        },  */
     ]
 
     const projects=  dataCard.map(({imgSrc, title, development, projectLink, technologies},
