@@ -1,6 +1,8 @@
 import { ButtonOutline, ButtonPrimary } from "./Button"
 import { LuDownload } from "react-icons/lu";
 import { LuArrowDown } from "react-icons/lu";
+import avatar from "/dist/assets/images/avatar-1.jpg";
+import jb from "/dist/assets/images/jb-foto.png";
 
 const Person = () => {
     let iconDownload= <LuDownload />;
@@ -17,7 +19,7 @@ const Person = () => {
                     <div className="Person-div-intro">
                         <figure className="Person-avatar-box">
                             <img
-                                src="/images/avatar-1.jpg"
+                                src={avatar}
                                 width={40}
                                 height={40}
                                 alt="John Blanco"
@@ -55,7 +57,7 @@ const Person = () => {
                 <div className="Person-photo-box">
                     <figure className="Person-figure-background">
                         <img
-                            src="/images/jb-foto.png"
+                            src={jb}
                             alt="John Blanco"
                             className="Person-img"
                         />

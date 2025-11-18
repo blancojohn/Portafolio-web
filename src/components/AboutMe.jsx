@@ -1,3 +1,6 @@
+import logo from "/dist/assets/images/logo.svg"
+
+
 const dataAboutMeItems = [
   /*
   POR MI EXPERIENCIA HASTA AHORA NO DEBO MOSTRAR ESTO
@@ -60,10 +63,10 @@ const AboutMe= () => {
                         }
 
                         <img 
-                            src="/images/logo.svg"
+                            src={logo}
                             alt="logo"
-                            width={30}
-                            height={30}
+                            width={40}
+                            height={40}
                             className="AboutMe-img-logo"
                         />
                     </div>

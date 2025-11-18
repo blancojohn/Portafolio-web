@@ -1,47 +1,53 @@
 import ProjectCard from "./ProjectCard";
+import battlelship from "/dist/assets/images/battlelship.png";
+import jsIcon from "/dist/assets/images/javascript.svg";
+import reactIcon from "/dist/assets/images/react.svg";
+import cssIcon from "/dist/assets/images/css3.svg";
+import bootstrapIcon from "/dist/assets/images/bootstrap.svg";
+import gitIcon from "/dist/assets/images/git.svg";
 
+const dataCard = [
+    {
+        imgSrc: battlelship,
+        title: 'Battle Ship',
+        development: ['Algoritmia', 'Lógica', 'Diseño'],
+        projectLink: 'https://github.com/blancojohn/BattlelShip-InReactJS',
+        technologies: [jsIcon, reactIcon, cssIcon, bootstrapIcon, gitIcon]
+    },
 
+    /* FUTUROS PROYECTOS  */
 
-const Projects = () => {
-    const dataCard = [
-        {
-            imgSrc: '/images/Battlelship.png',
-            title: 'Battle Ship',
-            development: ['Algoritmia', 'Lógica', 'Diseño'],
-            projectLink: 'https://github.com/blancojohn/BattlelShip-InReactJS',
-            technologies: ['/images/javascript.svg', '/images/react.svg', '/images/css3.svg', '/images/bootstrap.svg', '/images/git.svg'] 
-        },
+  /*   {
+        imgSrc: '/images/Battlelship.png',
+        title: 'La Mascotienda',
+        development: ['API', 'MVP', 'Desarrollo'],
+        projectLink: 'https://github.com/The-Nick-J/Final-Project',
+        technologies: []
+    }, */
+    /*   {
+          imgSrc: '/images/Battlelship.png',
+          title: 'Star Wars',
+          development: ['API', 'Ecommerce', 'Development'],
+          projectLink: 'https://github.com/blancojohn/Ecommerce-StarWars-reading-list',
+          technologies: []
+      },  */
+];
 
-        /* FUTUROS PROYECTOS  */
+console.log("CARD BATTELSHIP", dataCard[0])
 
-         {
-            imgSrc: '/images/Battlelship.png',
-            title: 'La Mascotienda',
-            development: ['API', 'MVP', 'Desarrollo'],
-            projectLink: 'https://github.com/The-Nick-J/Final-Project',
-            technologies: []
-        },
-      /*   {
-            imgSrc: '/images/Battlelship.png',
-            title: 'Star Wars',
-            development: ['API', 'Ecommerce', 'Development'],
-            projectLink: 'https://github.com/blancojohn/Ecommerce-StarWars-reading-list',
-            technologies: []
-        },  */
-    ]
+const projects = dataCard.map(({ imgSrc, title, development, projectLink, technologies },
+    key) => (
+    <ProjectCard
+        key={key}
+        imgSrc={imgSrc}
+        title={title}
+        development={development}
+        projetLink={projectLink}
+        technologies={technologies}
+    />
+))
 
-    const projects=  dataCard.map(({imgSrc, title, development, projectLink, technologies},
-                        key) => (
-                            <ProjectCard 
-                                key={key} 
-                                imgSrc={imgSrc} 
-                                title={title} 
-                                development={development} 
-                                projetLink={projectLink}
-                                technologies={technologies}
-                            />
-                        ))
-
+const Project = () => {
     return (
         <section
             id="proyectos"
@@ -60,4 +66,4 @@ const Projects = () => {
     )
 }
 
-export default Projects;
+export default Project;

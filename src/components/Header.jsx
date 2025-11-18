@@ -1,8 +1,16 @@
 import Navbar from "./Navbar"
 import { useState } from "react"
+import logo from "/dist/assets/images/logo.svg";
 
 const Header = () => {
     const [navOpen, setNavOpen] = useState(false);
+   const imagen= <img
+        src={logo}
+        width={70}
+        height={70}
+        alt="Logo"
+    />
+    console.log("LOGO", imagen)
 
     return (
         <>
@@ -11,7 +19,7 @@ const Header = () => {
                     <h1>
                         <a href="#bienvenido">
                             <img
-                                src="/dist/assets/images/logo.svg"
+                                src={logo}
                                 width={70}
                                 height={70}
                                 alt="Logo"

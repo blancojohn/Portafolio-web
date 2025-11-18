@@ -1,5 +1,7 @@
 import { ButtonPrimary } from "./Button";
 import { LuArrowRight } from "react-icons/lu";
+import logo from "/dist/assets/images/logo.svg";
+
 
 const dataSiteMap = [
     {
@@ -120,7 +122,7 @@ const Footer = () => {
                         href="#bienvenido"
                     >
                         <img
-                            src="/images/logo.svg"
+                            src={logo}
                             width={40}
                             height={40}
                             alt="Logo"
