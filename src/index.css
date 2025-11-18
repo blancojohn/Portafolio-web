@@ -12,9 +12,9 @@ body {
   display: flex;
   align-items: center;
   position: fixed;
-  width: 380px;
+  width: 310px;
   height: 80px;
-  margin-inline: 120px;
+  margin-inline: 110px;
   z-index: 1;
 }
 
@@ -41,6 +41,7 @@ body {
 .Header-button-menu-hamburguesa {
   position: absolute;
   top: 10px;
+  right: 18px;
   visibility: visible;
   width: 30px;
   height: 30px;
@@ -189,25 +190,7 @@ body {
 
 /* COMPONENTE PERSON */
 .Person-section {
-  padding-top: 75px;
-}
-
-@media (min-width: 1280px){
-  .Person-section {
-    padding-top: 160px;
-  } 
-}
-
-@media (min-width: 1024px) and (max-width: 1279px){
-  .Person-section {
-    padding-top: 140px;
-  }
-}
-
-@media (min-width: 640px) and (max-width: 1023px){
-  .Person-section {
-    padding-top: 110px;
-  }
+  padding-top: 200px;
 }
 
 .Person-div-container {
@@ -493,7 +476,7 @@ body {
 /* COMPONENTE PROJECT */
 .Project-div-container {
   width: 310px;
-  padding-top: 40px;
+  padding-top: 150px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -513,7 +496,6 @@ body {
  @media (min-width: 1024px) {
   .Project-div-container {
     width: 650px;
-    padding-top: 70px;
   }
 }
 
