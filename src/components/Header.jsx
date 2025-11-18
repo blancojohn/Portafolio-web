@@ -1,6 +1,6 @@
 import Navbar from "./Navbar"
 import { useState } from "react"
-import logo from "/dist/assets/images/logo.svg";
+import logo from "/src/assets/images/logo.svg";
 
 const Header = () => {
     const [navOpen, setNavOpen] = useState(false);

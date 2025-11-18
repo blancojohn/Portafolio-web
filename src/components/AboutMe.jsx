@@ -1,4 +1,4 @@
-import logo from "/dist/assets/images/logo.svg"
+import logo from "/src/assets/images/logo.svg"
 
 
 const dataAboutMeItems = [

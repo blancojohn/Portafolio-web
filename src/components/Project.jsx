@@ -1,10 +1,10 @@
 import ProjectCard from "./ProjectCard";
-import battlelship from "/dist/assets/images/battlelship.png";
-import jsIcon from "/dist/assets/images/javascript.svg";
-import reactIcon from "/dist/assets/images/react.svg";
-import cssIcon from "/dist/assets/images/css3.svg";
-import bootstrapIcon from "/dist/assets/images/bootstrap.svg";
-import gitIcon from "/dist/assets/images/git.svg";
+import battlelship from "/src/assets/images/battlelship.png";
+import jsIcon from "/src/assets/images/javascript.svg";
+import reactIcon from "/src/assets/images/react.svg";
+import cssIcon from "/src/assets/images/css3.svg";
+import bootstrapIcon from "/src/assets/images/bootstrap.svg";
+import gitIcon from "/src/assets/images/git.svg";
 
 const dataCard = [
     {
