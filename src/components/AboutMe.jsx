@@ -14,8 +14,6 @@ const dataAboutMeItems = [
   }
 ];
 
-console.log("ARRAY ORIGINAL",dataAboutMeItems)
-
 const aboutMeItems= dataAboutMeItems.map(({ label, number }, key) => (
     <div key={key}>
         <div className="AboutMe-div-items">
@@ -25,8 +23,6 @@ const aboutMeItems= dataAboutMeItems.map(({ label, number }, key) => (
         <p className="AboutMe-items-p">{label}</p>
     </div>
 ));
-
-console.log("ARRAY COPIADO", aboutMeItems)
 
 const AboutMe= () => {
     return (

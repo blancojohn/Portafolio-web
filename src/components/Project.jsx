@@ -10,20 +10,19 @@ const dataCard = [
     {
         imgSrc: battlelship,
         title: 'Battle Ship',
-        development: ['Algoritmia', 'Lógica', 'Diseño'],
-        projectLink: 'https://github.com/blancojohn/BattlelShip-InReactJS',
+        development: ['Algoritmia', 'Funciones', 'Diseño'],
+        /* projectLink: 'https://github.com/blancojohn/BattlelShip-InReactJS', */
+        https: 'https://battlelship-inreactjs.onrender.com',
         technologies: [jsIcon, reactIcon, cssIcon, bootstrapIcon, gitIcon]
     },
 
-    /* FUTUROS PROYECTOS  */
-
-  /*   {
-        imgSrc: '/images/Battlelship.png',
+    {
+        imgSrc: 'al',
         title: 'La Mascotienda',
-        development: ['API', 'MVP', 'Desarrollo'],
-        projectLink: 'https://github.com/The-Nick-J/Final-Project',
-        technologies: []
-    }, */
+        development: ['API', 'DB', 'JWT', 'CRUD'],
+        https: 'https://github.com/The-Nick-J/Final-Project',
+        technologies: [gitIcon]
+    },
     /*   {
           imgSrc: '/images/Battlelship.png',
           title: 'Star Wars',
@@ -33,16 +32,14 @@ const dataCard = [
       },  */
 ];
 
-console.log("CARD BATTELSHIP", dataCard[0])
-
-const projects = dataCard.map(({ imgSrc, title, development, projectLink, technologies },
+const projects = dataCard.map(({ imgSrc, title, development, https, technologies },
     key) => (
     <ProjectCard
         key={key}
         imgSrc={imgSrc}
         title={title}
         development={development}
-        projetLink={projectLink}
+        https={https}
         technologies={technologies}
     />
 ))

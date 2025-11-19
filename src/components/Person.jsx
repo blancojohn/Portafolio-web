@@ -3,6 +3,7 @@ import { LuDownload } from "react-icons/lu";
 import { LuArrowDown } from "react-icons/lu";
 import avatar from "../assets/images/avatar-1.jpg";
 import jb from "../assets/images/jb-foto.png";
+import docu from "../assets/public/John-Blanco-CV-FullStack.pdf";
 
 const Person = () => {
     let iconDownload= <LuDownload />;
@@ -43,7 +44,8 @@ const Person = () => {
                         <ButtonPrimary 
                             label={"Descargar CV"} 
                             icon={iconDownload} 
-                            href={""}
+                            href={docu}
+                            download
                         />
 
                         <ButtonOutline 

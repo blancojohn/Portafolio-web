@@ -5,7 +5,7 @@ const ProjectCard = ({
     imgSrc,
     title,
     development,
-    projetLink,
+    https,
     technologies
 }) => {
 
@@ -64,7 +64,7 @@ const ProjectCard = ({
             </div>
 
             <a
-                href={projetLink}
+                href={https}
                 target="_blank"
                 className="ProjectCard-anchor-github"
             >

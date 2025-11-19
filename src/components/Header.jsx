@@ -10,7 +10,6 @@ const Header = () => {
         height={70}
         alt="Logo"
     />
-    console.log("LOGO", imagen)
 
     return (
         <>
