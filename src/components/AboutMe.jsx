@@ -36,9 +36,9 @@ const AboutMe= () => {
 
                     <p className="AboutMe-p">
                         Bienvenido, soy John Blanco, con el tiempo me terminan diciendo John White, profesional de Marketing de Ventas B2B. 
-                        Conocí el Desarrollo de Sofware hace dos años por la curiosidad que me generó la insistente publicidad de diplomados 
+                        Conocí el Desarrollo de Software hace dos años por la curiosidad que me generó la insistente publicidad de diplomados 
                         en redes sociales. Me certifiqué en el Boot Camp 4Geeks Academy como desarrollador Full Stack en el 2024. 
-                        Me gusta crear experiencias web intutivas para los usuarios.       
+                        Me gusta crear experiencias web intuitivas para los usuarios.       
                     </p>
                     <p className="AboutMe-p">
                         Entre mis habilidades, destaco que durante el desarrollo del Boot Camp, lideré a mi equipo en las metodologías 
