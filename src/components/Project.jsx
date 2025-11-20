@@ -5,6 +5,12 @@ import reactIcon from "../assets/images/react.svg";
 import cssIcon from "../assets/images/css3.svg";
 import bootstrapIcon from "../assets/images/bootstrap.svg";
 import gitIcon from "../assets/images/git.svg";
+import flaskIcon from "../assets/images/flask.svg";
+import gitHubIcon from "../assets/images/gitHub.svg";
+import pythonIcon from "../assets/images/python.svg";
+import jwtIcon from "../assets/images/jwt.svg";
+import sqlAlchemyIcon from "../assets/images/sqlAlchemy.svg";
+import postgresIcon from "../assets/images/postgres.svg";
 
 const dataCard = [
     {
@@ -13,15 +19,15 @@ const dataCard = [
         development: ['Algoritmia', 'Funciones', 'Diseño'],
         /* projectLink: 'https://github.com/blancojohn/BattlelShip-InReactJS', */
         https: 'https://battlelship-inreactjs.onrender.com',
-        technologies: [jsIcon, reactIcon, cssIcon, bootstrapIcon, gitIcon]
+        technologies: [jsIcon, reactIcon, cssIcon, bootstrapIcon, gitIcon, gitHubIcon]
     },
 
     {
         imgSrc: 'al',
         title: 'La Mascotienda',
-        development: ['API', 'DB', 'JWT', 'CRUD'],
+        development: ['API', 'BaseDatos', 'Autenticación'],
         https: 'https://github.com/The-Nick-J/Final-Project',
-        technologies: [gitIcon]
+        technologies: [pythonIcon, sqlAlchemyIcon, postgresIcon, flaskIcon, jwtIcon, gitHubIcon]
     },
     /*   {
           imgSrc: '/images/Battlelship.png',

@@ -42,15 +42,17 @@ const AboutMe= () => {
                     </p>
                     <p className="AboutMe-p">
                         Entre mis habilidades, destaco que durante el desarrollo del Boot Camp, lideré a mi equipo en las metodologías 
-                        del desarrollo ágil para construir nuestro proyecto final. Me gusta crear las historias de usuarios, tener un plan 
-                        de trabajo y creo en la importancia de este proceso porque permite estar con la mente ordenada al momento de programar
-                        y avanzar. Además, me gusta crear bases de datos, APIS y sobre todo tener un front-end en el que los usuarios se les 
-                        haga fácil navegar.
+                        del desarrollo ágil para construir nuestro proyecto final. Considero que es importante tener una metodología de 
+                        trabajo definida cuando se desarrolla. De tal manera, se puede avanzar con claridad y especialmente en orden.
+                        Además, desarrollé la base de datos, la API, el sistema de autenticación de usuarios, siendo de gran apoyo para mi
+                        equipo. 
+                        Por la complejidad del proyecto y el flujo de los datos, en el front-end optamos por una arquitectura con Flux y 
+                        context.
                     </p>
                     <p className="AboutMe-p">
-                        Cuento con experiencia profesional desarrollando aplicaciones webs, junto a mi 
-                        equipo de estudio, desarrollamos un MVP que consiste en una tienda de Ecommerce. Finalmente, 
-                        puedo ver mis pasiones por el Marketing y ahora por la programación mezcladas.
+                        Cuento con experiencia en el desarrollo de una aplicación web de comercio electrónico. Junto a mi 
+                        equipo de estudio, desarrollamos un MVP. Finalmente, puedo ver mis pasiones por el Marketing y 
+                        ahora por la programación mezcladas.
                     </p>
 
                     <div className="AboutMe-div-box-img-text">
