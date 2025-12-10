@@ -44,8 +44,10 @@ const AboutMe= () => {
                         Entre mis habilidades, destaco que durante el desarrollo del Boot Camp, lideré a mi equipo en las metodologías 
                         del desarrollo ágil para construir nuestro proyecto final. Considero que es importante tener una metodología de 
                         trabajo definida cuando se desarrolla. De tal manera, se puede avanzar con claridad y especialmente en orden.
-                        Además, desarrollé la base de datos, la API, el sistema de autenticación de usuarios, siendo de gran apoyo para mi
-                        equipo. 
+                        Además, desarrollé la base de datos, la API, el sistema de autenticación de usuarios y actualmente estoy refactorizando
+                        el front, mejoré el flujo de navegación para la autenticación de usuarios, añadiendo redirecciones después de acciones, 
+                        haciendo componentes más modulares y escalables. Te comparto el link de Github por si deseas ver el código  
+                        <a href="https://github.com/blancojohn/Final-Project" target="_blank">Proyecto-Final</a>.
                         Por la complejidad del proyecto y el flujo de los datos, en el front-end optamos por una arquitectura con Flux y 
                         context.
                     </p>

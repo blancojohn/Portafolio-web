@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import battlelship from "../assets/images/battlelship.png";
+import mascotienda from "../assets/images/mascotienda.png";
 import jsIcon from "../assets/images/javascript.svg";
 import reactIcon from "../assets/images/react.svg";
 import cssIcon from "../assets/images/css3.svg";
@@ -23,10 +24,10 @@ const dataCard = [
     },
 
     {
-        imgSrc: 'al',
+        imgSrc: mascotienda,
         title: 'La Mascotienda',
         development: ['API', 'BaseDatos', 'Autenticación'],
-        https: 'https://github.com/The-Nick-J/Final-Project',
+        https: 'https://la-mascotienda.onrender.com',
         technologies: [pythonIcon, sqlAlchemyIcon, postgresIcon, flaskIcon, jwtIcon, gitHubIcon]
     },
     /*   {
