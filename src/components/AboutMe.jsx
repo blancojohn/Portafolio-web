@@ -57,6 +57,7 @@ const AboutMe = () => {
                         Esto me ha permitido analizar y tener atención al detalle para tener un código limpio, escalable y modular.
                         Te comparto el link de mi cuenta de GitHub por si acaso deseas ver el código: <a href="https://github.com/blancojohn/Final-Project" target="_blank">Proyecto-Final</a>.
                         En el Front-End utilizamos flux y un contexto global para el flujo eficiente y ordenado de los datos en las funcionalidades de gestión de usuarios, carrito de compras y datos para mercado pago.
+                        Estoy interesado en formar parte de un equipo de desarrollo real para aportar con mis habilidades y también seguir aprendiendo de los demás.
                     </p>
 
                     <div className="AboutMe-div-box-img-text">
