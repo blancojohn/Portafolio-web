@@ -4,19 +4,13 @@ import logo from "../assets/images/logo.svg";
 
 const Header = () => {
     const [navOpen, setNavOpen] = useState(false);
-   const imagen= <img
-        src={logo}
-        width={70}
-        height={70}
-        alt="Logo"
-    />
-
+ 
     return (
         <>
             <header className="Header-header-container">
                 <div className="Header-div">
                     <h1>
-                        <a href="#bienvenido">
+                        <a href="#inicio">
                             <img
                                 src={logo}
                                 width={70}

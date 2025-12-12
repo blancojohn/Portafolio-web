@@ -5,8 +5,8 @@ import logo from "../assets/images/logo.svg";
 
 const dataSiteMap = [
     {
-        label: 'Bienvenido',
-        href: '#bienvenido'
+        label: 'Inicio',
+        href: '#inicio'
     },
     {
         label: 'Sobre Mí',
@@ -119,7 +119,7 @@ const Footer = () => {
 
                 <div className="Footer-div-box-logo-text">
                     <a
-                        href="#bienvenido"
+                        href="#inicio"
                     >
                         <img
                             src={logo}

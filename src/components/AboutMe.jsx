@@ -2,19 +2,19 @@ import logo from "../assets/images/logo.svg"
 
 
 const dataAboutMeItems = [
-  /*
-  POR MI EXPERIENCIA HASTA AHORA NO DEBO MOSTRAR ESTO
-  {
-    label: 'Project done',
-    number: 45
-  }, */
-  {
-    label: 'Experiencia profesional',
-    number: 1
-  }
+    /*
+    POR MI EXPERIENCIA HASTA AHORA NO DEBO MOSTRAR ESTO
+    {
+      label: 'Project done',
+      number: 45
+    }, */
+    {
+        label: 'Experiencia profesional',
+        number: 1
+    }
 ];
 
-const aboutMeItems= dataAboutMeItems.map(({ label, number }, key) => (
+const aboutMeItems = dataAboutMeItems.map(({ label, number }, key) => (
     <div key={key}>
         <div className="AboutMe-div-items">
             <span className="AboutMe-span-number">{number}</span>
@@ -24,7 +24,7 @@ const aboutMeItems= dataAboutMeItems.map(({ label, number }, key) => (
     </div>
 ));
 
-const AboutMe= () => {
+const AboutMe = () => {
     return (
         <section
             id="sobre-mi"
@@ -35,26 +35,28 @@ const AboutMe= () => {
                 <div className="AboutMe-div-box">
 
                     <p className="AboutMe-p">
-                        Bienvenido, soy John Blanco, con el tiempo me terminan diciendo John White, profesional de Marketing de Ventas B2B. 
-                        Conocí el Desarrollo de Software hace dos años por la curiosidad que me generó la insistente publicidad de diplomados 
-                        en redes sociales. Me certifiqué en el Boot Camp 4Geeks Academy como desarrollador Full Stack en el 2024. 
-                        Me gusta crear experiencias web intuitivas para los usuarios.       
+                        Hola, soy John Blanco, con el tiempo me terminan diciendo John White, Desarrollador Junior Full Stack.
+                        Conocí el Desarrollo de Software hace dos años por la curiosidad que me generó la insistente publicidad de diplomados
+                        en internet y me inscribí en una certificación oficial en 4Geeks Academy Chile, la cual terminé a mediados del año 2023.
+                        Si deseas ver el documento acreditado puedes hacer click en <a href="https://certificate.4geeks.com/cc5a7e11b2d930ad89ee3e213418b1b6f93a64c2" target="_blank">ver certificado</a>.
+                        Tengo experiencia en el desarrollo Full Stack de una aplicación web de comercio electrónico. Junto a mi equipo de estudio, creé un MVP.
+                        Mi background profesional es Administración de Empresas, con una destacada trayectoria en el área de Marketing y Ventas B2B.
+
                     </p>
                     <p className="AboutMe-p">
-                        Entre mis habilidades, destaco que durante el desarrollo del Boot Camp, lideré a mi equipo en las metodologías 
-                        del desarrollo ágil para construir nuestro proyecto final. Considero que es importante tener una metodología de 
-                        trabajo definida cuando se desarrolla. De tal manera, se puede avanzar con claridad y especialmente en orden.
-                        Además, desarrollé la base de datos, la API, el sistema de autenticación de usuarios y actualmente estoy refactorizando
-                        el front, mejoré el flujo de navegación para la autenticación de usuarios, añadiendo redirecciones después de acciones, 
-                        haciendo componentes más modulares y escalables. Te comparto el link de Github por si deseas ver el código  
-                        <a href="https://github.com/blancojohn/Final-Project" target="_blank">Proyecto-Final</a>.
-                        Por la complejidad del proyecto y el flujo de los datos, en el front-end optamos por una arquitectura con Flux y 
-                        context.
+                        Mis habilidades de cooperaración, gestión y comunicación, me permitieron guiar a mi equipo en las metodologías de desarrollo ágiles en la fase de la creación de nuestro proyecto final
+                        para obtener la certificación. Una anécdota interesante que me sucedió en este punto, es que me sorprendí al ver como mís habilidades desarrolladas por mi background comercial, fueron de gran importancia para entregar satisfactoriamente el MVP en el tiempo establecido.
+                        Considero que es importante tener un plan de trabajo definido y estructurado, que permita descomponer en varios sprints el producto final.
+                        Gracias a ello permite tener la mente más clara al momento de programar y definir las tareas a seguir en el equipo.
+
                     </p>
                     <p className="AboutMe-p">
-                        Cuento con experiencia en el desarrollo de una aplicación web de comercio electrónico. Junto a mi 
-                        equipo de estudio, desarrollamos un MVP. Finalmente, puedo ver mis pasiones por el Marketing y 
-                        ahora por la programación mezcladas.
+                        En el código, desarrollé las funcionalidades de gestión de usuarios y autenticación, abarcando la lógica del servidor, la interfaz
+                        de usuario, y la persistencia de los datos. Actualmente estoy refactorizando el código en algunos componentes.
+                        Porque por la presión de entregar a tiempo escribimos mucho código spaghetti, a los mejor sigue siendo spaghetti pero, menos.
+                        Esto me ha permitido analizar y tener atención al detalle para tener un código limpio, escalable y modular.
+                        Te comparto el link de mi cuenta de GitHub por si acaso deseas ver el código: <a href="https://github.com/blancojohn/Final-Project" target="_blank">Proyecto-Final</a>.
+                        En el Front-End utilizamos flux y un contexto global para el flujo eficiente y ordenado de los datos en las funcionalidades de gestión de usuarios, carrito de compras y datos para mercado pago.
                     </p>
 
                     <div className="AboutMe-div-box-img-text">
@@ -62,7 +64,7 @@ const AboutMe= () => {
                             aboutMeItems
                         }
 
-                        <img 
+                        <img
                             src={logo}
                             alt="logo"
                             width={40}

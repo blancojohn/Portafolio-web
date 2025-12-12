@@ -3,7 +3,7 @@ import { LuDownload } from "react-icons/lu";
 import { LuArrowDown } from "react-icons/lu";
 import avatar from "../assets/images/avatar-1.jpg";
 import jb from "../assets/images/jb-foto.png";
-import docu from "../assets/public/John-Blanco-CV-FullStack.pdf";
+import docu from "../assets/public/John-Blanco-FullStack-CV.pdf";
 
 const Person = () => {
     let iconDownload= <LuDownload />;

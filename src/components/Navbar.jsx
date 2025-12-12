@@ -30,8 +30,8 @@ const Navbar = ({ navOpen }) => {
 
     const dataForNavbar = [
         {
-            label: 'Bienvenido',
-            link: '#bienvenido',
+            label: 'Inicio',
+            link: '#inicio',
             className: 'Navbar-link--active',
             ref: lastActiveLink
         },
